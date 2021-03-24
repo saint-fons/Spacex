@@ -4,7 +4,6 @@ import "./../Style/style.css"
 import ShopMetaData from "./ShopMetaData";
 
 const Shop = (props) => {
-
     return (
         <div className={"container"}>
             <div className={"container__header"}>
@@ -13,13 +12,11 @@ const Shop = (props) => {
 
                 <div>
                     <ShopMetaData
-                        address={props.address}
-                        isp={props.isp}
-                        country={props.country}
-                        city={props.city}
-                        provider={props.provider}
-                        timezone={props.timezone}
-                        cityToVisit={props.cityToVisit}
+                        Details={props.Details}
+                        Success={props.Success}
+                        Date={props.Date}
+                        Patch={props.Patch}
+                        Names={props.Names}
                     />
                 </div>
             </div>

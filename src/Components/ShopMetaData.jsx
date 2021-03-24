@@ -6,10 +6,16 @@ const ShopMetaData = (props) => {
         <div className={"container__header__data"}>
             <div className={"container__header__data__element"}>
                 <div className={"container__header__data__element__header"}>
-                    aircraft name
+                    Name
                 </div>
                 <div className={"container__header__data__element__bottom"}>
-                    some name
+                    <div>
+                        {props.Names.map(n =>
+                            <div>
+                                {n}
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
             <div className={"container__header__data__element"}>
@@ -17,7 +23,13 @@ const ShopMetaData = (props) => {
                     Mission description
                 </div>
                 <div className={"container__header__data__element__bottom"}>
-                    some mission
+                    <div>
+                        {props.Details.map(n =>
+                            <div>
+                                {n}
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
 
@@ -26,7 +38,13 @@ const ShopMetaData = (props) => {
                     flight status successful or not
                 </div>
                 <div className={"container__header__data__element__bottom"}>
-                    status
+                    <div>
+                        {props.Success.map(n =>
+                            <div>
+                                {n}
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
 
@@ -35,7 +53,13 @@ const ShopMetaData = (props) => {
                     date in the format
                 </div>
                 <div className={"container__header__data__element__bottom"}>
-                    date
+                    <div>
+                        {props.Date.map(n =>
+                            <div>
+                                {n}
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
 
@@ -44,7 +68,13 @@ const ShopMetaData = (props) => {
                     patch
                 </div>
                 <div className={"container__header__data__element__bottom"}>
-                    patch
+                    <div>
+                        {props.Patch.map(n =>
+                            <div>
+                                <img src={n} alt={"patch"} width="50" height="60"/>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
 
