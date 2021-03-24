@@ -3,7 +3,7 @@ import thunkMiddleware from "redux-thunk"
 import rocketReducer from "./Rocket-reducer";
 
 let reducers = combineReducers({
-    TicketPage: rocketReducer,
+    LaunchesPage: rocketReducer,
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
