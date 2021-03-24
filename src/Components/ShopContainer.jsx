@@ -6,10 +6,9 @@ import Shop from "./Shop";
 import {getData} from "../Redux/Rocket-reducer";
 import {
     getNamesSelector,
-    getLaunchesSC,
     getDetailsSelector,
     getSuccessSelector,
-    getDateSelector, getPatchSelector
+    getDateSelector, getPatchSelector, getLaunchesSelectorSS
 } from "../Redux/Launches-selector";
 
 
@@ -36,11 +35,11 @@ class ShopContainer extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        getLaunchesSC: getLaunchesSC(state),
         getDetailsSelector: getDetailsSelector(state),
         getSuccessSelector: getSuccessSelector(state),
         getDateSelector: getDateSelector(state),
         getPatchSelector: getPatchSelector(state),
+        getLaunchesSelectorSS: getLaunchesSelectorSS(state),
         getNamesSelector: getNamesSelector(state)
     }
 }

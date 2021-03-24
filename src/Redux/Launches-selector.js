@@ -4,7 +4,22 @@ import {createSelector} from "reselect";
 export const getLaunchesSelector = (state) => {
     return (state)
 }
-/*select rockets names*/
+
+
+export const getLaunchesSelectorSS = createSelector(
+    getLaunchesSelector,
+    (state) => {
+        let sortLaunches = state.LaunchesPage.launches.filter(
+            f => f.launch_date_local.includes(state.LaunchesPage.Date)
+        )
+        debugger
+        return sortLaunches
+    }
+)
+
+
+
+
 export const getNamesSelector = (state) => {
     let names = state.LaunchesPage.launches.map(
         l => (
@@ -14,7 +29,6 @@ export const getNamesSelector = (state) => {
     return names
 }
 
-/*select some description*/
 export const getDetailsSelector = (state) => {
     let details = state.LaunchesPage.launches.map(
         l => (
@@ -24,7 +38,6 @@ export const getDetailsSelector = (state) => {
     return details
 }
 
-/*success or not*/
 export const getSuccessSelector = (state) => {
     let success = state.LaunchesPage.launches.map(
         l => (
@@ -34,7 +47,6 @@ export const getSuccessSelector = (state) => {
     return success
 }
 
-/*select date*/
 export const getDateSelector = (state) => {
     let date = state.LaunchesPage.launches.map(
         l => (
@@ -44,7 +56,6 @@ export const getDateSelector = (state) => {
     return date
 }
 
-/*select rocket patch*/
 export const getPatchSelector = (state) => {
     let date = state.LaunchesPage.launches.map(
         l => (
@@ -53,15 +64,4 @@ export const getPatchSelector = (state) => {
     )
     return date
 }
-
-
-
-
-
-export const getLaunchesSC = createSelector(
-    getLaunchesSelector,
-    (state) => {
-        return state.LaunchesPage
-    }
-)
 

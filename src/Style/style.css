@@ -47,6 +47,7 @@
     width: 25%;
     min-height: 250px;
     z-index: 5;
+    border: 3px solid red;
   }
   .container .container__header .container__header__data .container__header__data__element .container__header__data__element__header {
     max-width: 150px;
