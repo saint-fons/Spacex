@@ -16,7 +16,7 @@
   .container .container__header {
     max-width: 100%;
     min-height: 100%;
-    background-image: url("pattern-bg.png");
+    background-image: url("logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@
   }
   .container .container__header .container__header__data {
     width: 70%;
-    min-height: 2500px;
+    min-height: 1200px;
     margin: 1% auto auto auto;
     border-radius: 25px;
     display: flex;

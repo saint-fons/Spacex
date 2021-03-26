@@ -5,12 +5,9 @@ import "./../Style/style.css"
 import Shop from "./Shop";
 import {getData} from "../Redux/Rocket-reducer";
 import {
-    getNamesSelector,
-    getDetailsSelector,
-    getSuccessSelector,
-    getDateSelector, getPatchSelector, getLaunchesSelectorSS
-} from "../Redux/Launches-selector";
-
+    getLaunchesSS
+}
+    from "../Redux/Launches-selector";
 
 
 class ShopContainer extends React.Component {
@@ -22,11 +19,7 @@ class ShopContainer extends React.Component {
     render() {
         return <div>
             <Shop
-                Details={this.props.getDetailsSelector}
-                Success={this.props.getSuccessSelector}
-                Date={this.props.getDateSelector}
-                Patch={this.props.getPatchSelector}
-                Names={this.props.getNamesSelector}
+                FilteredLaunches={this.props.getLaunchesSS}
             />
         </div>
     }
@@ -35,12 +28,7 @@ class ShopContainer extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        getDetailsSelector: getDetailsSelector(state),
-        getSuccessSelector: getSuccessSelector(state),
-        getDateSelector: getDateSelector(state),
-        getPatchSelector: getPatchSelector(state),
-        getLaunchesSelectorSS: getLaunchesSelectorSS(state),
-        getNamesSelector: getNamesSelector(state)
+        getLaunchesSS: getLaunchesSS(state)
     }
 }
 

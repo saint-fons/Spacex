@@ -23,7 +23,7 @@ $FullDisplay: 100%;
       max-width: $FullDisplay;
       min-height: $FullDisplay;
 
-      background-image: url("pattern-bg.png");
+      background-image: url("logo.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -45,7 +45,7 @@ $FullDisplay: 100%;
 
       .container__header__data {
         width: $FullDisplay - 30%;
-        min-height: 2500px;
+        min-height: 1200px;
 
         margin: 1% auto auto auto;
         border-radius: 25px;

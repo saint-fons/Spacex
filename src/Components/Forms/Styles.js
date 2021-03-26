@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, {css} from 'styled-components'
 
 const btn = (light, dark) => css`
   white-space: nowrap;
@@ -7,20 +7,26 @@ const btn = (light, dark) => css`
   padding: 5px 15px;
   font-size: 16px;
   color: white;
+
   &:visited {
     color: white;
   }
+
   background-image: linear-gradient(${light}, ${dark});
   border: 1px solid ${dark};
+
   &:hover {
     background-image: linear-gradient(${light}, ${dark});
+
     &[disabled] {
       background-image: linear-gradient(${light}, ${dark});
     }
   }
+
   &:visited {
     color: black;
   }
+
   &[disabled] {
     opacity: 0.6;
     cursor: not-allowed;
@@ -62,6 +68,7 @@ export default styled.div`
     padding: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
+    background-color: white;
     position: relative;
 
     & > .buttons {
@@ -70,15 +77,19 @@ export default styled.div`
       justify-content: center;
       margin-top: 15px;
     }
+
     button {
       margin: 0 10px;
+
       &[type='submit'] {
         ${btnPrimary};
       }
+
       &[type='button'] {
         ${btnDefault};
       }
     }
+
     .error {
       display: flex;
       font-weight: bold;
@@ -86,9 +97,11 @@ export default styled.div`
       flex-flow: row nowrap;
       justify-content: center;
     }
+
     .Select {
       width: 100%;
     }
+
     pre {
       border: 1px solid #ccc;
       background: rgba(0, 0, 0, 0.1);

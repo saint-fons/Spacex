@@ -46,11 +46,6 @@ const NewForm = (props) => {
     return (
         <MuiThemeProvider muiTheme={getMuiTheme()}>
             <Styles>
-                <h1>🏁 React Final Form Example</h1>
-                <h2>Third Party Components</h2>
-                <a href="https://github.com/erikras/react-final-form#-react-final-form">
-                    Read Docs
-                </a>
                 <div>
                     This example uses{' '}
                     <a href="https://github.com/JedWatson/react-select">React Select</a> and{' '}

@@ -6,7 +6,7 @@ export const getLaunchesSelector = (state) => {
 }
 
 
-export const getLaunchesSelectorSS = createSelector(
+export const getLaunchesSS = createSelector(
     getLaunchesSelector,
     (state) => {
         let sortLaunches = state.LaunchesPage.launches.filter(
@@ -19,6 +19,7 @@ export const getLaunchesSelectorSS = createSelector(
 
 
 
+/*
 
 export const getNamesSelector = (state) => {
     let names = state.LaunchesPage.launches.map(
@@ -65,3 +66,4 @@ export const getPatchSelector = (state) => {
     return date
 }
 
+*/

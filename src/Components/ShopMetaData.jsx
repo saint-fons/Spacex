@@ -10,9 +10,9 @@ const ShopMetaData = (props) => {
                 </div>
                 <div className={"container__header__data__element__bottom"}>
                     <div>
-                        {props.Names.map(n =>
+                        {props.FilteredLaunches.map(n =>
                             <div>
-                                {n}
+                                {n.rocket.rocket_name}
                             </div>
                         )}
                     </div>
@@ -24,9 +24,9 @@ const ShopMetaData = (props) => {
                 </div>
                 <div className={"container__header__data__element__bottom"}>
                     <div>
-                        {props.Details.map(n =>
+                        {props.FilteredLaunches.map(d =>
                             <div>
-                                {n}
+                                {d.details}
                             </div>
                         )}
                     </div>
@@ -39,9 +39,9 @@ const ShopMetaData = (props) => {
                 </div>
                 <div className={"container__header__data__element__bottom"}>
                     <div>
-                        {props.Success.map(n =>
+                        {props.FilteredLaunches.map(s =>
                             <div>
-                                {n}
+                                {s.launch_success}
                             </div>
                         )}
                     </div>
@@ -54,9 +54,9 @@ const ShopMetaData = (props) => {
                 </div>
                 <div className={"container__header__data__element__bottom"}>
                     <div>
-                        {props.Date.map(n =>
+                        {props.FilteredLaunches.map(d =>
                             <div>
-                                {n}
+                                {d.launch_date_local}
                             </div>
                         )}
                     </div>
@@ -69,9 +69,12 @@ const ShopMetaData = (props) => {
                 </div>
                 <div className={"container__header__data__element__bottom"}>
                     <div>
-                        {props.Patch.map(n =>
+                        {props.FilteredLaunches.map(p =>
                             <div>
-                                <img src={n} alt={"patch"} width="50" height="60"/>
+                                <img src={p.links.mission_patch}
+                                     alt={"patch"}
+                                     width="50"
+                                     height="60"/>
                             </div>
                         )}
                     </div>

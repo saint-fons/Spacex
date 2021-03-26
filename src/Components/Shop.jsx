@@ -17,6 +17,7 @@ const Shop = (props) => {
                         Date={props.Date}
                         Patch={props.Patch}
                         Names={props.Names}
+                        FilteredLaunches={props.FilteredLaunches}
                     />
                 </div>
             </div>
