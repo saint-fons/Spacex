@@ -20,6 +20,8 @@ const Shop = (props) => {
                         Patch={props.Patch}
                         Names={props.Names}
                         FilteredLaunches={props.FilteredLaunches}
+                        CurrentPage={props.CurrentPage}
+                        PostsPerPage={props.PostsPerPage}
                     />
                 </div>
             </div>

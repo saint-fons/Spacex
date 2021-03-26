@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import "./../Style/style.css"
 
 const ShopMetaData = (props) => {
+
     return (
         <div className={"container__header__data"}>
             <div className={"container__header__data__element"}>

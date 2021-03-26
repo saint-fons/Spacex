@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8570b616-554e-4f1b-86ab-eda1e479fb52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Forms/NewForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Forms/NewForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Shop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ShopContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ShopContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/ShopMetaData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ShopMetaData.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Launches-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Launches-selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/simple_react_pagination-master/simple_react_pagination-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -55,7 +57,7 @@
       <workItem from="1616510875795" duration="2889000" />
       <workItem from="1616600576093" duration="14549000" />
       <workItem from="1616735634621" duration="603000" />
-      <workItem from="1616737112037" duration="5324000" />
+      <workItem from="1616737112037" duration="8777000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -99,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616741985228</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="success color picker">
+      <created>1616751161796</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616751161796</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +133,7 @@
     <MESSAGE value="date selector created" />
     <MESSAGE value="launches filtered super selector" />
     <MESSAGE value="simple date picker" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple date picker" />
+    <MESSAGE value="success color picker" />
+    <option name="LAST_COMMIT_MESSAGE" value="success color picker" />
   </component>
 </project>

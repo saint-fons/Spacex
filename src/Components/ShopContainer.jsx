@@ -29,7 +29,9 @@ class ShopContainer extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        getLaunchesSS: getLaunchesSS(state)
+        getLaunchesSS: getLaunchesSS(state),
+        CurrentPage:state.LaunchesPage.CurrentPage,
+        PostsPerPage:state.LaunchesPage.PostsPerPage,
     }
 }
 

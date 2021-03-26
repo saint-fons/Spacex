@@ -120,7 +120,9 @@ let initialState = {
         },
         "crew": null
     }],
-    Date: ""
+    Date: "",
+    CurrentPage: 1,
+    PostsPerPage: 10
 }
 
 

@@ -9,9 +9,13 @@ export const getLaunchesSelector = (state) => {
 export const getLaunchesSS = createSelector(
     getLaunchesSelector,
     (state) => {
-        let sortLaunches = state.LaunchesPage.launches.filter(
+        const indexOfLastPost = state.LaunchesPage.CurrentPage * state.LaunchesPage.PostsPerPage
+        const indexOfFirstPost = indexOfLastPost - state.LaunchesPage.PostsPerPage
+        const currentPosts = state.LaunchesPage.launches.slice(indexOfFirstPost, indexOfLastPost)
+        let sortLaunches = currentPosts.filter(
             f => f.launch_date_local.includes(state.LaunchesPage.Date)
         )
+
         return sortLaunches
     }
 )
