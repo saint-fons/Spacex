@@ -84,7 +84,7 @@ const NewForm = (props) => {
                                     component={ToggleAdapter}
                                     labelPosition="right"
                                 />
-                            </div>*/}
+                            </div>
                             <div className="buttons">
                                 <button type="submit" disabled={submitting}>
                                     Log In
@@ -97,7 +97,9 @@ const NewForm = (props) => {
                                     Reset
                                 </button>
                             </div>
+
                             <pre>{JSON.stringify(values, 0, 2)}</pre>
+                            */}
                         </form>
                     )}
                 />

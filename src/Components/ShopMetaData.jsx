@@ -46,7 +46,9 @@ const ShopMetaData = (props) => {
                         {props.FilteredLaunches.map(s =>
                             <div>
                                 {
-                                    s.launch_success
+                                    s.launch_success ?
+                                        <div className={"green"}>success</div> :
+                                        <div className={"red"}>not success</div>
                                 }
                             </div>
                         )}
