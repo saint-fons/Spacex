@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8570b616-554e-4f1b-86ab-eda1e479fb52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Shop.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/ShopContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ShopContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/ShopMetaData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ShopMetaData.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Launches-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Launches-selector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/style-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style-dist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +49,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\git\SpaceX\spacexliga\src\Redux" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\git\SpaceX\spacexliga\src\Components" />
+      <recent name="F:\git\SpaceX\spacexliga\src\Redux" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -57,7 +65,7 @@
       <workItem from="1616510875795" duration="2889000" />
       <workItem from="1616600576093" duration="14549000" />
       <workItem from="1616735634621" duration="603000" />
-      <workItem from="1616737112037" duration="8777000" />
+      <workItem from="1616737112037" duration="15360000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -108,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616751161796</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="launches numbers limited by 10">
+      <created>1616762472570</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616762472570</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +149,7 @@
     <MESSAGE value="launches filtered super selector" />
     <MESSAGE value="simple date picker" />
     <MESSAGE value="success color picker" />
-    <option name="LAST_COMMIT_MESSAGE" value="success color picker" />
+    <MESSAGE value="launches numbers limited by 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="launches numbers limited by 10" />
   </component>
 </project>

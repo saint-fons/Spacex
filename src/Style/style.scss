@@ -43,9 +43,18 @@ $FullDisplay: 100%;
       }
 
 
+      .paginationBar {
+        width: 500px;
+        height: 50px;
+        background-color: green;
+
+        margin: 20px auto 20px auto;
+      }
+
       .container__header__data {
         width: $FullDisplay - 30%;
-        min-height: 1200px;
+        min-height: 900px;
+        min-height: 900px;
 
         margin: 1% auto auto auto;
         border-radius: 25px;
@@ -59,14 +68,11 @@ $FullDisplay: 100%;
 
         z-index: 5;
 
-
         .container__header__data__element {
           width: $FullDisplay - 75%;
           min-height: 250px;
 
           z-index: 5;
-
-          border: 3px solid red;
 
           .container__header__data__element__header {
             max-width: 150px;
@@ -89,7 +95,7 @@ $FullDisplay: 100%;
 
             margin: auto;
 
-            font-size: 23px;
+            font-size: 18px;
 
             text-align: center;
 

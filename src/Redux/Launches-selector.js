@@ -5,6 +5,12 @@ export const getLaunchesSelector = (state) => {
     return (state)
 }
 
+// numbers of all launches
+export const getTotalPostsLengthSelector = (state) => {
+    let totalPosts = state.LaunchesPage.launches.length
+    return totalPosts
+}
+
 
 export const getLaunchesSS = createSelector(
     getLaunchesSelector,

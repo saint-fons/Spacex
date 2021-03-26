@@ -4,6 +4,7 @@ import {locationInfoAPI} from "../API/API";
 
 const SET_DATA = 'SET-DATA';
 const DATE_UPDATE = 'DATE-UPDATE';
+const UPDATE_CURRENT_PAGE = 'UPDATE-CURRENT-PAGE';
 
 
 let initialState = {
@@ -122,7 +123,7 @@ let initialState = {
     }],
     Date: "",
     CurrentPage: 1,
-    PostsPerPage: 10
+    PostsPerPage: 3
 }
 
 
@@ -143,6 +144,14 @@ const rocketReducer = (
             stateCopy.Date = action.date
             return stateCopy
         }
+
+        case UPDATE_CURRENT_PAGE: {
+            stateCopy = {...state}
+            stateCopy.CurrentPage = action.CurrentPage
+            return stateCopy
+        }
+
+
         default:
             return state
     }
@@ -154,6 +163,11 @@ export const setAddress = (data) =>
 
 export const updateDate = (date) =>
     ({type: DATE_UPDATE, date})
+
+export const updateCurrentPage = (CurrentPage) =>
+    ({type: UPDATE_CURRENT_PAGE, CurrentPage})
+
+
 
 
 

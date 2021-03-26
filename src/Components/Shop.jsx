@@ -2,7 +2,6 @@ import React from 'react'
 import NewForm from "./Forms/NewForm";
 import "./../Style/style.css"
 import ShopMetaData from "./ShopMetaData";
-import {updateDate} from "../Redux/Rocket-reducer";
 
 const Shop = (props) => {
     return (
@@ -14,14 +13,11 @@ const Shop = (props) => {
 
                 <div>
                     <ShopMetaData
-                        Details={props.Details}
-                        Success={props.Success}
-                        Date={props.Date}
-                        Patch={props.Patch}
-                        Names={props.Names}
                         FilteredLaunches={props.FilteredLaunches}
                         CurrentPage={props.CurrentPage}
                         PostsPerPage={props.PostsPerPage}
+                        totalPosts={props.totalPosts}
+                        paginate={props.paginate}
                     />
                 </div>
             </div>
