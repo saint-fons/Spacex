@@ -15,7 +15,7 @@ const Shop = (props) => {
                     <ShopMetaData
                         FilteredLaunches={props.FilteredLaunches}
                         CurrentPage={props.CurrentPage}
-                        PostsPerPage={props.PostsPerPage}
+                        LaunchesPerPage={props.LaunchesPerPage}
                         totalPosts={props.totalPosts}
                         paginate={props.paginate}
                     />

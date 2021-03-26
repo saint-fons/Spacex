@@ -123,7 +123,7 @@ let initialState = {
     }],
     Date: "",
     CurrentPage: 1,
-    PostsPerPage: 3
+    LaunchesPerPage: 5
 }
 
 

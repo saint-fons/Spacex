@@ -22,7 +22,7 @@ class ShopContainer extends React.Component {
                 FilteredLaunches={this.props.getLaunchesSS}
                 updateDate={this.props.updateDate}
                 paginate={this.props.updateCurrentPage}
-                PostsPerPage={this.props.PostsPerPage}
+                LaunchesPerPage={this.props.LaunchesPerPage}
                 totalPosts={this.props.getTotalPostsLengthSelector}
             />
         </div>
@@ -35,7 +35,7 @@ let mapStateToProps = (state) => {
         getLaunchesSS: getLaunchesSS(state),
         getTotalPostsLengthSelector: getTotalPostsLengthSelector(state),
         CurrentPage:state.LaunchesPage.CurrentPage,
-        PostsPerPage:state.LaunchesPage.PostsPerPage,
+        LaunchesPerPage:state.LaunchesPage.LaunchesPerPage,
     }
 }
 

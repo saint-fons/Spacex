@@ -15,10 +15,10 @@ export const getTotalPostsLengthSelector = (state) => {
 export const getLaunchesSS = createSelector(
     getLaunchesSelector,
     (state) => {
-        const indexOfLastPost = state.LaunchesPage.CurrentPage * state.LaunchesPage.PostsPerPage
-        const indexOfFirstPost = indexOfLastPost - state.LaunchesPage.PostsPerPage
-        const currentPosts = state.LaunchesPage.launches.slice(indexOfFirstPost, indexOfLastPost)
-        let sortLaunches = currentPosts.filter(
+        const indexOfLastLaunch = state.LaunchesPage.CurrentPage * state.LaunchesPage.LaunchesPerPage
+        const indexOfFirstLaunch = indexOfLastLaunch - state.LaunchesPage.LaunchesPerPage
+        const currentLaunch = state.LaunchesPage.launches.slice(indexOfFirstLaunch, indexOfLastLaunch)
+        let sortLaunches = currentLaunch.filter(
             f => f.launch_date_local.includes(state.LaunchesPage.Date)
         )
 

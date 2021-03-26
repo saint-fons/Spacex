@@ -4,7 +4,7 @@ const Pagination = (props) => {
 
     const pageNumbers = []
 
-    for (let i = 1; i <= Math.ceil(props.totalPosts / props.PostsPerPage); i++) {
+    for (let i = 1; i <= Math.ceil(props.totalPosts / props.LaunchesPerPage); i++) {
         pageNumbers.push(i)
     }
 

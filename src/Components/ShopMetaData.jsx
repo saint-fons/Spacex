@@ -8,7 +8,7 @@ const ShopMetaData = (props) => {
         <div>
             <div className={"paginationBar"}>
                 <Pagination
-                    PostsPerPage={props.PostsPerPage}
+                    LaunchesPerPage={props.LaunchesPerPage}
                     totalPosts={props.totalPosts}
                     paginate={props.paginate}
                 />
