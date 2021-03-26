@@ -3,7 +3,7 @@ import {compose} from "redux";
 import connect from "react-redux/lib/connect/connect";
 import "./../Style/style.css"
 import Shop from "./Shop";
-import {getData} from "../Redux/Rocket-reducer";
+import {getData, updateDate} from "../Redux/Rocket-reducer";
 import {
     getLaunchesSS
 }
@@ -20,6 +20,7 @@ class ShopContainer extends React.Component {
         return <div>
             <Shop
                 FilteredLaunches={this.props.getLaunchesSS}
+                updateDate={this.props.updateDate}
             />
         </div>
     }
@@ -33,6 +34,7 @@ let mapStateToProps = (state) => {
 }
 
 export default compose(connect(mapStateToProps, {
-    getData
+    getData,
+    updateDate
 }))
 (ShopContainer)

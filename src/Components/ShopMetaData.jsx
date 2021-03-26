@@ -11,8 +11,10 @@ const ShopMetaData = (props) => {
                 <div className={"container__header__data__element__bottom"}>
                     <div>
                         {props.FilteredLaunches.map(n =>
-                            <div>
-                                {n.rocket.rocket_name}
+                            <div key={n.flight_number}>
+                                {
+                                    n.rocket.rocket_name
+                                }
                             </div>
                         )}
                     </div>
@@ -26,7 +28,9 @@ const ShopMetaData = (props) => {
                     <div>
                         {props.FilteredLaunches.map(d =>
                             <div>
-                                {d.details}
+                                {
+                                    d.details
+                                }
                             </div>
                         )}
                     </div>
@@ -41,7 +45,9 @@ const ShopMetaData = (props) => {
                     <div>
                         {props.FilteredLaunches.map(s =>
                             <div>
-                                {s.launch_success}
+                                {
+                                    s.launch_success
+                                }
                             </div>
                         )}
                     </div>
@@ -56,7 +62,9 @@ const ShopMetaData = (props) => {
                     <div>
                         {props.FilteredLaunches.map(d =>
                             <div>
-                                {d.launch_date_local}
+                                {
+                                    d.launch_date_local
+                                }
                             </div>
                         )}
                     </div>
@@ -71,7 +79,9 @@ const ShopMetaData = (props) => {
                     <div>
                         {props.FilteredLaunches.map(p =>
                             <div>
-                                <img src={p.links.mission_patch}
+                                <img src={
+                                    p.links.mission_patch
+                                }
                                      alt={"patch"}
                                      width="50"
                                      height="60"/>

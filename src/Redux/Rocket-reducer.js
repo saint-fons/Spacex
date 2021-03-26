@@ -3,6 +3,7 @@ import {locationInfoAPI} from "../API/API";
 
 
 const SET_DATA = 'SET-DATA';
+const DATE_UPDATE = 'DATE-UPDATE';
 
 
 let initialState = {
@@ -119,7 +120,7 @@ let initialState = {
         },
         "crew": null
     }],
-    Date: "2010"
+    Date: ""
 }
 
 
@@ -135,6 +136,11 @@ const rocketReducer = (
                 launches: action.data.data
             }
         }
+        case DATE_UPDATE: {
+            stateCopy = {...state}
+            stateCopy.Date = action.date
+            return stateCopy
+        }
         default:
             return state
     }
@@ -143,6 +149,10 @@ const rocketReducer = (
 
 export const setAddress = (data) =>
     ({type: SET_DATA, data})
+
+export const updateDate = (date) =>
+    ({type: DATE_UPDATE, date})
+
 
 
 export const getData = () => {

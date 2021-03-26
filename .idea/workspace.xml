@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8570b616-554e-4f1b-86ab-eda1e479fb52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Style/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Forms/NewForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Forms/NewForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Forms/Styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Forms/Styles.js" afterDir="false" />
@@ -11,9 +10,6 @@
       <change beforePath="$PROJECT_DIR$/src/Components/ShopMetaData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ShopMetaData.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Launches-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Launches-selector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/style-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style-dist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +59,7 @@
       <workItem from="1616510875795" duration="2889000" />
       <workItem from="1616600576093" duration="14549000" />
       <workItem from="1616735634621" duration="603000" />
-      <workItem from="1616737112037" duration="1751000" />
+      <workItem from="1616737112037" duration="3728000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -93,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616620805096</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="launches filtered super selector">
+      <created>1616740129512</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616740129512</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +119,7 @@
     <MESSAGE value="redux state init" />
     <MESSAGE value="displayed" />
     <MESSAGE value="date selector created" />
-    <option name="LAST_COMMIT_MESSAGE" value="date selector created" />
+    <MESSAGE value="launches filtered super selector" />
+    <option name="LAST_COMMIT_MESSAGE" value="launches filtered super selector" />
   </component>
 </project>

@@ -12,7 +12,6 @@ export const getLaunchesSS = createSelector(
         let sortLaunches = state.LaunchesPage.launches.filter(
             f => f.launch_date_local.includes(state.LaunchesPage.Date)
         )
-        debugger
         return sortLaunches
     }
 )

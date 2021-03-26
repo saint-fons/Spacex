@@ -8,6 +8,7 @@ import TextField from 'material-ui/TextField'
 import Toggle from 'material-ui/Toggle'
 import Select from 'react-select'
 import states from './states'
+import {updateDate} from "../../Redux/Rocket-reducer";
 
 
 const TextFieldAdapter = ({ input, meta, ...rest }) => (
@@ -38,32 +39,37 @@ const onSubmit = async values => {
     await sleep(300)
     window.alert(JSON.stringify(values, 0, 2))
 }
-const required = value => (value ? undefined : 'Required')
+
 
 
 const NewForm = (props) => {
 
+    const required = value => (value ? updateNewDate(value) : 'Required')
+
+    function updateNewDate(date) {
+        props.updateDate(date)
+    }
+
     return (
         <MuiThemeProvider muiTheme={getMuiTheme()}>
             <Styles>
-                <div>
-                    This example uses{' '}
-                    <a href="https://github.com/JedWatson/react-select">React Select</a> and{' '}
-                    <a href="http://www.material-ui.com">Material UI</a>.
-                </div>
                 <Form
                     onSubmit={onSubmit}
-                    render={({ handleSubmit, form, submitting, pristine, values }) => (
+                    render={({ handleSubmit,
+                                 form,
+                                 submitting,
+                                 pristine,
+                                 values }) => (
                         <form onSubmit={handleSubmit}>
                             <div>
                                 <Field
-                                    name="firstName"
+                                    name="datePicker"
                                     component={TextFieldAdapter}
                                     validate={required}
-                                    hintText="First Name"
-                                    floatingLabelText="First Name"
+                                    hintText="Pick date"
+                                    floatingLabelText="Pick date"
                                 />
-                            </div>
+                            </div>{/*
                             <div>
                                 <Field
                                     name="state"
@@ -78,7 +84,7 @@ const NewForm = (props) => {
                                     component={ToggleAdapter}
                                     labelPosition="right"
                                 />
-                            </div>
+                            </div>*/}
                             <div className="buttons">
                                 <button type="submit" disabled={submitting}>
                                     Log In

@@ -2,12 +2,14 @@ import React from 'react'
 import NewForm from "./Forms/NewForm";
 import "./../Style/style.css"
 import ShopMetaData from "./ShopMetaData";
+import {updateDate} from "../Redux/Rocket-reducer";
 
 const Shop = (props) => {
     return (
         <div className={"container"}>
             <div className={"container__header"}>
                 <NewForm
+                    updateDate={props.updateDate}
                 />
 
                 <div>
