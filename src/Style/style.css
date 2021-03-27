@@ -40,9 +40,9 @@
   }
   .container .container__header .container__header__data {
     width: 70%;
+    max-height: 900px;
     min-height: 900px;
-    min-height: 900px;
-    margin: 1% auto auto auto;
+    margin: 10% auto auto auto;
     border-radius: 25px;
     display: flex;
     background-color: white;

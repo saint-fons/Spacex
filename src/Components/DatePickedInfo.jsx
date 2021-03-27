@@ -1,13 +1,12 @@
 import "./../Style/style.css"
-import Pagination from "./Pagination";
 
-const MetaDataInfo = (props) => {
+const DatePickedInfo = (props) => {
     return (
         <div>
             <div className={"container__header__data"}>
                 <div className={"container__header__data__element"}>
                     <div className={"container__header__data__element__header"}>
-                        Name
+                        Name 111
                     </div>
                     <div className={"container__header__data__element__bottom"}>
                         <div>
@@ -23,7 +22,7 @@ const MetaDataInfo = (props) => {
                 </div>
                 <div className={"container__header__data__element"}>
                     <div className={"container__header__data__element__header"}>
-                        Mission description
+                        Mission description 222
                     </div>
                     <div className={"container__header__data__element__bottom"}>
                         <div>
@@ -40,7 +39,7 @@ const MetaDataInfo = (props) => {
 
                 <div className={"container__header__data__element"}>
                     <div className={"container__header__data__element__header"}>
-                        flight status successful or not
+                        flight status successful or not 333
                     </div>
                     <div className={"container__header__data__element__bottom"}>
                         <div>
@@ -98,4 +97,4 @@ const MetaDataInfo = (props) => {
     )
 }
 
-export default MetaDataInfo
+export default DatePickedInfo

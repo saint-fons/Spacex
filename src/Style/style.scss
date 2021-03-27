@@ -53,10 +53,10 @@ $FullDisplay: 100%;
 
       .container__header__data {
         width: $FullDisplay - 30%;
-        min-height: 900px;
+        max-height: 900px;
         min-height: 900px;
 
-        margin: 1% auto auto auto;
+        margin: 10% auto auto auto;
         border-radius: 25px;
 
         display: flex;

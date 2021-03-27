@@ -121,7 +121,7 @@ let initialState = {
         },
         "crew": null
     }],
-    Date: 0,
+    Date: "",
     CurrentPage: 1,
     LaunchesPerPage: 5
 }

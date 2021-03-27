@@ -7,7 +7,9 @@ import DatePickerLaunches from "./DatePickerLaunches";
 import {getData, updateCurrentPage, updateDate} from "../Redux/Rocket-reducer";
 import {
     getLaunchesSS,
-    getTotalPostsLengthSelector
+    getTotalPostsLengthSelector,
+    getSortedLaunchesSS,
+
 } from "../Redux/Launches-selector";
 import {Route} from "react-router-dom";
 import {withRouter} from "react-router";
@@ -28,7 +30,9 @@ class Container extends React.Component {
                     TotalLaunches={this.props.getTotalPostsLengthSelector}
                 />}
             />
-            <Route exact path='/datepicker' render={() =>
+
+
+            <Route exact path='/datepicker/datepicker' render={() =>
                 <DatePickerLaunches
                     updateDate={this.props.updateDate}
                     SortedLaunches={this.props.getSortedLaunchesSS}
@@ -43,10 +47,11 @@ class Container extends React.Component {
 let mapStateToProps = (state) => {
     return {
         getLaunchesSS: getLaunchesSS(state),
+        getSortedLaunchesSS: getSortedLaunchesSS(state),
         getTotalPostsLengthSelector: getTotalPostsLengthSelector(state),
         CurrentPage: state.LaunchesPage.CurrentPage,
         LaunchesPerPage: state.LaunchesPage.LaunchesPerPage,
-        getSortedLaunchesSS: state.LaunchesPage.getSortedLaunchesSS,
+
     }
 }
 

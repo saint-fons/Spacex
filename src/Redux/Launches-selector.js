@@ -24,17 +24,22 @@ export const getSortedLaunchesSS = createSelector(
     getLaunchesSelector,
     (state) => {
         let SortedLaunches = ""
-        if(state.LaunchesPage.launches.date == 0) {
-            return SortedLaunches = state.LaunchesPage.launches.launch_year.includes(state.LaunchesPage.Date)
+        if (state.LaunchesPage.Date === "") {
+            SortedLaunches = state.LaunchesPage.launches
+            debugger
+            return SortedLaunches
         }
-        if(state.LaunchesPage.launches.date != 0) {
-            return SortedLaunches = state.LaunchesPage.launches.launch_year.includes(state.LaunchesPage.Date)
+        if (state.LaunchesPage.Date !== "") {
+            SortedLaunches = state.LaunchesPage.launches.filter(
+                f => f.launch_year.includes(state.LaunchesPage.Date)
+            )
+            debugger
+            return SortedLaunches
         }
+
+
     }
 )
-
-
-
 
 
 /*export const getLaunchesSS = createSelector(
