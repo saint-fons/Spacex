@@ -20,9 +20,8 @@ class Container extends React.Component {
 
     render() {
         return <div>
-            <Route exact path='/' render={() =>
+            <Route path='/' render={() =>
                 <Launches
-                    updateDate={this.props.updateDate}
                     FilteredLaunches={this.props.getLaunchesSS}
                     Paginate={this.props.updateCurrentPage}
                     LaunchesPerPage={this.props.LaunchesPerPage}
@@ -31,6 +30,8 @@ class Container extends React.Component {
             />
             <Route exact path='/datepicker' render={() =>
                 <DatePickerLaunches
+                    updateDate={this.props.updateDate}
+                    SortedLaunches={this.props.getSortedLaunchesSS}
                 />}
             />
 
@@ -45,6 +46,7 @@ let mapStateToProps = (state) => {
         getTotalPostsLengthSelector: getTotalPostsLengthSelector(state),
         CurrentPage: state.LaunchesPage.CurrentPage,
         LaunchesPerPage: state.LaunchesPage.LaunchesPerPage,
+        getSortedLaunchesSS: state.LaunchesPage.getSortedLaunchesSS,
     }
 }
 

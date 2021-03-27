@@ -2,6 +2,7 @@ import React from 'react'
 import NewForm from "./Forms/NewForm";
 import "./../Style/style.css"
 import MetaDataInfo from "./MetaDataInfo";
+import DatePickedInfo from "./DatePickedInfo";
 
 const Launches = (props) => {
     return (
@@ -10,14 +11,9 @@ const Launches = (props) => {
                 <NewForm
                     updateDate={props.updateDate}
                 />
-
                 <div>
-                    <MetaDataInfo
-                        FilteredLaunches={props.FilteredLaunches}
-                        CurrentPage={props.CurrentPage}
-                        LaunchesPerPage={props.LaunchesPerPage}
-                        TotalLaunches={props.TotalLaunches}
-                        Paginate={props.Paginate}
+                    <DatePickedInfo
+                        SortedLaunches={props.SortedLaunches}
                     />
                 </div>
             </div>
