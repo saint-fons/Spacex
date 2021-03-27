@@ -4,7 +4,7 @@ const Pagination = (props) => {
 
     const pageNumbers = []
 
-    for (let i = 1; i <= Math.ceil(props.totalPosts / props.LaunchesPerPage); i++) {
+    for (let i = 1; i <= Math.ceil(props.TotalLaunches / props.LaunchesPerPage); i++) {
         pageNumbers.push(i)
     }
 
@@ -16,7 +16,7 @@ const Pagination = (props) => {
                         <span
                             key={number}
                         >
-                            <a onClick={() => props.paginate(number)}
+                            <a onClick={() => props.Paginate(number)}
                                href={"!#"}
                             >
                                 {number}

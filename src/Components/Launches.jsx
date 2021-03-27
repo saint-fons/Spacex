@@ -1,9 +1,9 @@
 import React from 'react'
 import NewForm from "./Forms/NewForm";
 import "./../Style/style.css"
-import ShopMetaData from "./ShopMetaData";
+import MetaDataInfo from "./MetaDataInfo";
 
-const Shop = (props) => {
+const Launches = (props) => {
     return (
         <div className={"container"}>
             <div className={"container__header"}>
@@ -12,12 +12,12 @@ const Shop = (props) => {
                 />
 
                 <div>
-                    <ShopMetaData
+                    <MetaDataInfo
                         FilteredLaunches={props.FilteredLaunches}
                         CurrentPage={props.CurrentPage}
                         LaunchesPerPage={props.LaunchesPerPage}
-                        totalPosts={props.totalPosts}
-                        paginate={props.paginate}
+                        TotalLaunches={props.TotalLaunches}
+                        Paginate={props.Paginate}
                     />
                 </div>
             </div>
@@ -26,4 +26,4 @@ const Shop = (props) => {
 }
 
 
-export default Shop
+export default Launches

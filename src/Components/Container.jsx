@@ -2,7 +2,7 @@ import React from 'react'
 import {compose} from "redux";
 import connect from "react-redux/lib/connect/connect";
 import "./../Style/style.css"
-import Shop from "./Shop";
+import Launches from "./Launches";
 import {getData, updateCurrentPage, updateDate} from "../Redux/Rocket-reducer";
 import {
     getLaunchesSS, getTotalPostsLengthSelector
@@ -10,7 +10,7 @@ import {
     from "../Redux/Launches-selector";
 
 
-class ShopContainer extends React.Component {
+class Container extends React.Component {
 
     componentDidMount() {
         this.props.getData()
@@ -18,12 +18,12 @@ class ShopContainer extends React.Component {
 
     render() {
         return <div>
-            <Shop
-                FilteredLaunches={this.props.getLaunchesSS}
+            <Launches
                 updateDate={this.props.updateDate}
-                paginate={this.props.updateCurrentPage}
+                FilteredLaunches={this.props.getLaunchesSS}
+                Paginate={this.props.updateCurrentPage}
                 LaunchesPerPage={this.props.LaunchesPerPage}
-                totalPosts={this.props.getTotalPostsLengthSelector}
+                TotalLaunches={this.props.getTotalPostsLengthSelector}
             />
         </div>
     }
@@ -44,4 +44,4 @@ export default compose(connect(mapStateToProps, {
     updateDate,
     updateCurrentPage
 }))
-(ShopContainer)
+(Container)

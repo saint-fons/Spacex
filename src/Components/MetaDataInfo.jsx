@@ -1,15 +1,15 @@
 import "./../Style/style.css"
 import Pagination from "./Pagination";
 
-const ShopMetaData = (props) => {
+const MetaDataInfo = (props) => {
     return (
 
         <div>
             <div className={"paginationBar"}>
                 <Pagination
                     LaunchesPerPage={props.LaunchesPerPage}
-                    totalPosts={props.totalPosts}
-                    paginate={props.paginate}
+                    TotalLaunches={props.TotalLaunches}
+                    Paginate={props.Paginate}
                 />
             </div>
 
@@ -90,7 +90,7 @@ const ShopMetaData = (props) => {
                     <div className={"container__header__data__element__bottom"}>
                         <div>
                             {props.FilteredLaunches.map(p =>
-                                <div key={p.links.mission_patch.toString()}>
+                                <div key={Math.random()}>
                                     <img src={
                                         p.links.mission_patch
                                     }
@@ -107,4 +107,4 @@ const ShopMetaData = (props) => {
     )
 }
 
-export default ShopMetaData
+export default MetaDataInfo
