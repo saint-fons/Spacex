@@ -1,4 +1,4 @@
-import ShopContainer from "./Components/ShopContainer";
+import ShopContainer from "./Components/Container";
 
 
 function App() {
