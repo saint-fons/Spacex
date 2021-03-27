@@ -13,8 +13,12 @@ const Pagination = (props) => {
             <ul>
                 {
                     pageNumbers.map(number => (
-                        <span>
-                            <a onClick={() => props.paginate(number)} href={"!#"}>
+                        <span
+                            key={number}
+                        >
+                            <a onClick={() => props.paginate(number)}
+                               href={"!#"}
+                            >
                                 {number}
                                     <span>
                                         .

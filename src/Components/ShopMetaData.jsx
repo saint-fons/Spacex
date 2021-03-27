@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from "react"
 import "./../Style/style.css"
 import Pagination from "./Pagination";
 
@@ -38,7 +37,7 @@ const ShopMetaData = (props) => {
                     <div className={"container__header__data__element__bottom"}>
                         <div>
                             {props.FilteredLaunches.map(d =>
-                                <div>
+                                <div key={d.details}>
                                     {
                                         d.details
                                     }
@@ -55,7 +54,7 @@ const ShopMetaData = (props) => {
                     <div className={"container__header__data__element__bottom"}>
                         <div>
                             {props.FilteredLaunches.map(s =>
-                                <div>
+                                <div key={s.launch_date_utc.toLocaleLowerCase()}>
                                     {
                                         s.launch_success ?
                                             <div className={"green"}>success</div> :
@@ -74,7 +73,7 @@ const ShopMetaData = (props) => {
                     <div className={"container__header__data__element__bottom"}>
                         <div>
                             {props.FilteredLaunches.map(d =>
-                                <div>
+                                <div key={d.launch_date_local.toString()}>
                                     {
                                         d.launch_date_local
                                     }
@@ -91,7 +90,7 @@ const ShopMetaData = (props) => {
                     <div className={"container__header__data__element__bottom"}>
                         <div>
                             {props.FilteredLaunches.map(p =>
-                                <div>
+                                <div key={p.links.mission_patch.toString()}>
                                     <img src={
                                         p.links.mission_patch
                                     }
