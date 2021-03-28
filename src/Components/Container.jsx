@@ -11,37 +11,26 @@ import {
 } from "../Redux/Launches-selector";
 import {Route} from "react-router-dom";
 import {withRouter} from "react-router";
+import ContainerStyle from "./ContainerStyle";
 
 class Container extends React.Component {
 
     componentDidMount() {
         this.props.getData()
     }
-
-
     render() {
         return <div>
-                <Route exact path='/' render={() =>
-                <Launches
-                    FilteredLaunches={this.props.getLaunchesSS}
-                    Paginate={this.props.updateCurrentPage}
-                    LaunchesPerPage={this.props.LaunchesPerPage}
-                    TotalLaunches={this.props.getTotalPostsLengthSelector}
-                    updateDate={this.props.updateDate}
-                    SortedLaunches={this.props.getSortedLaunchesSS}
-                />}
-            />
-
-            <Route exact path='/datepicker/datepicker/' render={() =>
-                <DatePickerLaunches
-                    updateDate={this.props.updateDate}
-                    SortedLaunches={this.props.getSortedLaunchesSS}
-                />}
+            <ContainerStyle
+                FilteredLaunches={this.props.getLaunchesSS}
+                Paginate={this.props.updateCurrentPage}
+                LaunchesPerPage={this.props.LaunchesPerPage}
+                TotalLaunches={this.props.getTotalPostsLengthSelector}
+                updateDate={this.props.updateDate}
+                SortedLaunches={this.props.getSortedLaunchesSS}
             />
         </div>
     }
 }
-
 
 let mapStateToProps = (state) => {
     return {

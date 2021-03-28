@@ -6,6 +6,7 @@ const MetaDataInfo = (props) => {
 
         <div>
             <div className={s.paginationBar}>
+
                 <Pagination
                     LaunchesPerPage={props.LaunchesPerPage}
                     TotalLaunches={props.TotalLaunches}
@@ -13,10 +14,15 @@ const MetaDataInfo = (props) => {
                 />
             </div>
 
-            <div className={s.container__header__data}>
+            <div className={
+
+                props.theme === 'light' ? s.container__header__data : s.container__header__data_black
+
+
+            }>
                 <div className={s.container__header__data__element}>
                     <div className={s.container__header__data__element__header}>
-                        Name
+                        Name/Success/Launch date
                     </div>
                     <div className={s.container__header__data__element__bottom}>
                         <div>
@@ -25,7 +31,11 @@ const MetaDataInfo = (props) => {
                                     className={s.container__header__data__element__bottom__list}
                                     key={n.flight_number}>
                                     <div>
-                                        {n.rocket.rocket_name}
+                                        {n.rocket.rocket_name}/
+                                        {n.launch_success ?
+                                            <span className={s.green}>success</span> :
+                                            <span className={s.red}>not success</span>}/
+                                        {n.launch_date_local}
                                     </div>
                                 </div>
                             )}
@@ -54,47 +64,6 @@ const MetaDataInfo = (props) => {
                         </div>
                     </div>
                 </div>
-
-                <div className={s.container__header__data__element}>
-                    <div className={s.container__header__data__element__header}>
-                        flight status successful or not
-                    </div>
-                    <div className={s.container__header__data__element__bottom}>
-                        <div>
-                            {props.FilteredLaunches.map(su =>
-                                <div
-                                    className={s.container__header__data__element__bottom__list}
-                                    key={su.launch_date_utc.toLocaleLowerCase()}>
-                                    {
-                                        su.launch_success ?
-                                            <div className={s.green}>success</div> :
-                                            <div className={s.red}>not success</div>
-                                    }
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                </div>
-
-                <div className={s.container__header__data__element}>
-                    <div className={s.container__header__data__element__header}>
-                        date in the format
-                    </div>
-                    <div className={s.container__header__data__element__bottom}>
-                        <div>
-                            {props.FilteredLaunches.map(d =>
-                                <div
-                                    className={s.container__header__data__element__bottom__list}
-                                    key={d.launch_date_local.toString()}>
-                                    {
-                                        d.launch_date_local
-                                    }
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                </div>
-
                 <div className={s.container__header__data__element}>
                     <div className={s.container__header__data__element__header}>
                         patch

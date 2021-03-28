@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 const Pagination = (props) => {
 
@@ -11,6 +12,12 @@ const Pagination = (props) => {
     return (
         <nav>
             <ul>
+                <span>
+                prev
+            </span>
+                <span>
+                next
+            </span>
                 {
                     pageNumbers.map(number => (
                         <span
@@ -27,6 +34,13 @@ const Pagination = (props) => {
                     ))
                 }
             </ul>
+            <div>
+                <NavLink to={'/datepicker/datepicker'}
+                >
+                    datepicker
+                </NavLink>
+
+            </div>
         </nav>
     );
 };

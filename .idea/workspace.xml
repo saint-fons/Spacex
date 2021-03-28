@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8570b616-554e-4f1b-86ab-eda1e479fb52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Style/style.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Style/style.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/ContainerStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Style/dark.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Style/light.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Style/style.module-dist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/DatePickedInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickedInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/DatePickerLaunches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickerLaunches.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Launches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Launches.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MetaDataInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MetaDataInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/style-dist.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -52,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,8 +64,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\git\SpaceX\spacexliga\src\Style" />
       <recent name="F:\git\SpaceX\spacexliga\src\Components" />
+      <recent name="F:\git\SpaceX\spacexliga\src\Style" />
       <recent name="F:\git\SpaceX\spacexliga\public" />
       <recent name="F:\git\SpaceX\spacexliga\src\Redux" />
     </key>
@@ -92,7 +93,8 @@
       <workItem from="1616850777886" duration="4158000" />
       <workItem from="1616860551108" duration="630000" />
       <workItem from="1616913172834" duration="12612000" />
-      <workItem from="1616931481335" duration="3688000" />
+      <workItem from="1616931481335" duration="8473000" />
+      <workItem from="1616952561089" duration="4632000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -213,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616929122282</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="migrate to modules. Router fixed">
+      <created>1616937754022</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1616937754022</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +259,7 @@
     <MESSAGE value="date picker selector by yars" />
     <MESSAGE value="main page styled" />
     <MESSAGE value="style modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="style modified" />
+    <MESSAGE value="migrate to modules. Router fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrate to modules. Router fixed" />
   </component>
 </project>
