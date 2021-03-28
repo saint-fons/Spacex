@@ -6,9 +6,12 @@
       <change beforePath="$PROJECT_DIR$/src/Components/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/DatePickedInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickedInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/DatePickerLaunches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickerLaunches.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Forms/NewForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Forms/NewForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Forms/Styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/Form-Styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Launches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Launches.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MetaDataInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MetaDataInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Launches-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Launches-selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style-dist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.scss" afterDir="false" />
@@ -52,6 +55,7 @@
       <recent name="F:\git\SpaceX\spacexliga\src\Redux" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\git\SpaceX\spacexliga\src\Style" />
       <recent name="F:\git\SpaceX\spacexliga\src\Components" />
       <recent name="F:\git\SpaceX\spacexliga\src\Redux" />
     </key>
@@ -71,7 +75,9 @@
       <workItem from="1616781898772" duration="1020000" />
       <workItem from="1616823039263" duration="4346000" />
       <workItem from="1616828669464" duration="6564000" />
-      <workItem from="1616850777886" duration="3917000" />
+      <workItem from="1616850777886" duration="4158000" />
+      <workItem from="1616860551108" duration="630000" />
+      <workItem from="1616913172834" duration="6712000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -171,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616833983026</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="date picker selector by yars">
+      <created>1616857286757</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616857286757</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +217,7 @@
     <MESSAGE value="components renamed. selector fixed" />
     <MESSAGE value="base routes added" />
     <MESSAGE value="url !# fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="url !# fixed" />
+    <MESSAGE value="date picker selector by yars" />
+    <option name="LAST_COMMIT_MESSAGE" value="date picker selector by yars" />
   </component>
 </project>

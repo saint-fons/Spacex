@@ -17,7 +17,7 @@ const Pagination = (props) => {
                             key={number}
                         >
                             <a onClick={() => props.Paginate(number)}
-                               href={"!#"}
+                               href={"/#"}
                             >
                                 {number}
                                     <span>

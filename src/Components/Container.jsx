@@ -4,12 +4,11 @@ import connect from "react-redux/lib/connect/connect";
 import "./../Style/style.css"
 import Launches from "./Launches";
 import DatePickerLaunches from "./DatePickerLaunches";
-import {getData, updateCurrentPage, updateDate} from "../Redux/Rocket-reducer";
+import {getData, updateCurrentPage, updateDate} from    "../Redux/Rocket-reducer";
 import {
     getLaunchesSS,
     getTotalPostsLengthSelector,
     getSortedLaunchesSS,
-
 } from "../Redux/Launches-selector";
 import {Route} from "react-router-dom";
 import {withRouter} from "react-router";
@@ -28,9 +27,10 @@ class Container extends React.Component {
                     Paginate={this.props.updateCurrentPage}
                     LaunchesPerPage={this.props.LaunchesPerPage}
                     TotalLaunches={this.props.getTotalPostsLengthSelector}
+                    updateDate={this.props.updateDate}
+                    SortedLaunches={this.props.getSortedLaunchesSS}
                 />}
             />
-
 
             <Route exact path='/datepicker/datepicker' render={() =>
                 <DatePickerLaunches

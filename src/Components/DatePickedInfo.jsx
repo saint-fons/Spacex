@@ -6,7 +6,7 @@ const DatePickedInfo = (props) => {
             <div className={"container__header__data"}>
                 <div className={"container__header__data__element"}>
                     <div className={"container__header__data__element__header"}>
-                        Name 111
+
                     </div>
                     <div className={"container__header__data__element__bottom"}>
                         <div>
@@ -22,7 +22,7 @@ const DatePickedInfo = (props) => {
                 </div>
                 <div className={"container__header__data__element"}>
                     <div className={"container__header__data__element__header"}>
-                        Mission description 222
+
                     </div>
                     <div className={"container__header__data__element__bottom"}>
                         <div>
@@ -39,7 +39,7 @@ const DatePickedInfo = (props) => {
 
                 <div className={"container__header__data__element"}>
                     <div className={"container__header__data__element__header"}>
-                        flight status successful or not 333
+
                     </div>
                     <div className={"container__header__data__element__bottom"}>
                         <div>
@@ -58,7 +58,7 @@ const DatePickedInfo = (props) => {
 
                 <div className={"container__header__data__element"}>
                     <div className={"container__header__data__element__header"}>
-                        date in the format
+
                     </div>
                     <div className={"container__header__data__element__bottom"}>
                         <div>
@@ -75,7 +75,7 @@ const DatePickedInfo = (props) => {
 
                 <div className={"container__header__data__element"}>
                     <div className={"container__header__data__element__header"}>
-                        patch
+
                     </div>
                     <div className={"container__header__data__element__bottom"}>
                         <div>

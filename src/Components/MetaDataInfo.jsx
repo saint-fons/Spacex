@@ -21,10 +21,12 @@ const MetaDataInfo = (props) => {
                     <div className={"container__header__data__element__bottom"}>
                         <div>
                             {props.FilteredLaunches.map(n =>
-                                <div key={n.flight_number}>
-                                    {
-                                        n.rocket.rocket_name
-                                    }
+                                <div
+                                    className={"container__header__data__element__bottom__list"}
+                                    key={n.flight_number}>
+                                    <div>
+                                        {n.rocket.rocket_name}
+                                    </div>
                                 </div>
                             )}
                         </div>
@@ -37,10 +39,16 @@ const MetaDataInfo = (props) => {
                     <div className={"container__header__data__element__bottom"}>
                         <div>
                             {props.FilteredLaunches.map(d =>
-                                <div key={d.details}>
-                                    {
-                                        d.details
-                                    }
+                                <div
+                                    className={"container__header__data__element__bottom__list"}
+                                    key={Math.random()}>
+                                    <div>
+                                        {
+                                            d.details ?
+                                                d.details :
+                                                <div>No description</div>
+                                        }
+                                    </div>
                                 </div>
                             )}
                         </div>
@@ -54,7 +62,9 @@ const MetaDataInfo = (props) => {
                     <div className={"container__header__data__element__bottom"}>
                         <div>
                             {props.FilteredLaunches.map(s =>
-                                <div key={s.launch_date_utc.toLocaleLowerCase()}>
+                                <div
+                                    className={"container__header__data__element__bottom__list"}
+                                    key={s.launch_date_utc.toLocaleLowerCase()}>
                                     {
                                         s.launch_success ?
                                             <div className={"green"}>success</div> :
@@ -73,7 +83,9 @@ const MetaDataInfo = (props) => {
                     <div className={"container__header__data__element__bottom"}>
                         <div>
                             {props.FilteredLaunches.map(d =>
-                                <div key={d.launch_date_local.toString()}>
+                                <div
+                                    className={"container__header__data__element__bottom__list"}
+                                    key={d.launch_date_local.toString()}>
                                     {
                                         d.launch_date_local
                                     }
@@ -90,13 +102,14 @@ const MetaDataInfo = (props) => {
                     <div className={"container__header__data__element__bottom"}>
                         <div>
                             {props.FilteredLaunches.map(p =>
-                                <div key={Math.random()}>
+                                <div
+                                    className={"container__header__data__element__bottom__list"}
+                                    key={Math.random()}>
                                     <img src={
                                         p.links.mission_patch
                                     }
-                                         alt={"patch"}
-                                         width="50"
-                                         height="60"/>
+                                         className={"container__header__data__element__bottom__list__labels"}
+                                    />
                                 </div>
                             )}
                         </div>

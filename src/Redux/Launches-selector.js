@@ -26,14 +26,12 @@ export const getSortedLaunchesSS = createSelector(
         let SortedLaunches = ""
         if (state.LaunchesPage.Date === "") {
             SortedLaunches = state.LaunchesPage.launches
-            debugger
             return SortedLaunches
         }
         if (state.LaunchesPage.Date !== "") {
             SortedLaunches = state.LaunchesPage.launches.filter(
                 f => f.launch_year.includes(state.LaunchesPage.Date)
             )
-            debugger
             return SortedLaunches
         }
 

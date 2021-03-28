@@ -52,11 +52,10 @@ $FullDisplay: 100%;
       }
 
       .container__header__data {
-        width: $FullDisplay - 30%;
-        max-height: 900px;
+        max-width: $FullDisplay - 10%;
         min-height: 900px;
 
-        margin: 10% auto auto auto;
+        margin: 5% auto auto auto;
         border-radius: 25px;
 
         display: flex;
@@ -76,13 +75,13 @@ $FullDisplay: 100%;
 
           .container__header__data__element__header {
             max-width: 150px;
-            min-height: 100px;
+            min-height: 50px;
 
             margin: auto;
 
             padding-top: 25px;
 
-            font-size: 18px;
+            font-size: 17px;
             color: darkgray;
 
             text-align: center;
@@ -90,12 +89,12 @@ $FullDisplay: 100%;
 
 
           .container__header__data__element__bottom {
-            max-width: 350px;
+            max-width: 450px;
             min-height: 100px;
 
             margin: auto;
 
-            font-size: 18px;
+            font-size: 14px;
 
             text-align: center;
 
@@ -106,6 +105,15 @@ $FullDisplay: 100%;
 
             .red {
               color: red;
+            }
+
+            .container__header__data__element__bottom__list {
+              max-width: 450px;
+              min-height: 230px;
+              .container__header__data__element__bottom__list__labels {
+                max-width: 230px;
+                min-height: 230px;
+              }
             }
 
 
