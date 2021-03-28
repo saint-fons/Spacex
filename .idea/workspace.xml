@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8570b616-554e-4f1b-86ab-eda1e479fb52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Style/style.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Style/style.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DatePickedInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickedInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DatePickerLaunches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickerLaunches.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Launches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Launches.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MetaDataInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MetaDataInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/style-dist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/style.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,25 +25,35 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="NamedScopeManager">
     <scope name="Unnamed" pattern="" />
   </component>
   <component name="ProjectId" id="1qA88QUOToTJ2Dt8TFsnUitHS9k" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Style" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -72,7 +91,8 @@
       <workItem from="1616828669464" duration="6564000" />
       <workItem from="1616850777886" duration="4158000" />
       <workItem from="1616860551108" duration="630000" />
-      <workItem from="1616913172834" duration="11295000" />
+      <workItem from="1616913172834" duration="12612000" />
+      <workItem from="1616931481335" duration="3688000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -186,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616923221808</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="style modified">
+      <created>1616929122282</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1616929122282</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +232,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial" />
     <MESSAGE value="redux state init" />
     <MESSAGE value="displayed" />
@@ -221,6 +249,7 @@
     <MESSAGE value="url !# fixed" />
     <MESSAGE value="date picker selector by yars" />
     <MESSAGE value="main page styled" />
-    <option name="LAST_COMMIT_MESSAGE" value="main page styled" />
+    <MESSAGE value="style modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="style modified" />
   </component>
 </project>

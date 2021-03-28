@@ -80,6 +80,7 @@
   .container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom .container__header__data__element__bottom__list {
     max-width: 450px;
     min-height: 230px;
+    background-color: antiquewhite;
   }
   .container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom .container__header__data__element__bottom__list .container__header__data__element__bottom__list__labels {
     max-width: 230px;

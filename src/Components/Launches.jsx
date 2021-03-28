@@ -1,13 +1,12 @@
 import React from 'react'
-import "./../Style/style.css"
 import MetaDataInfo from "./MetaDataInfo";
 import {NavLink} from "react-router-dom";
+import s from "./../Style/style.module.css"
 
 const Launches = (props) => {
     return (
-        <div className={"container"}>
-            <div className={"container__header"}>
-
+        <div className={s.container}>
+            <div className={s.container__header}>
                 <div>
                     <NavLink to={'/datepicker/datepicker'}
                     >
