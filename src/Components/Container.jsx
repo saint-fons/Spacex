@@ -19,6 +19,7 @@ class Container extends React.Component {
         this.props.getData()
     }
 
+
     render() {
         return <div>
             <Route path='/' render={() =>
@@ -38,7 +39,6 @@ class Container extends React.Component {
                     SortedLaunches={this.props.getSortedLaunchesSS}
                 />}
             />
-
         </div>
     }
 }

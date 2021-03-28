@@ -2,8 +2,6 @@ import React from 'react'
 import "./../Style/style.css"
 import MetaDataInfo from "./MetaDataInfo";
 import {NavLink} from "react-router-dom";
-import {withRouter} from "react-router";
-import {compose} from "redux";
 
 const Launches = (props) => {
     return (

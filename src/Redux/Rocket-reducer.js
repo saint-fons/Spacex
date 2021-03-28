@@ -121,7 +121,7 @@ let initialState = {
         },
         "crew": null
     }],
-    Date: "",
+    Date: "2006",
     CurrentPage: 1,
     LaunchesPerPage: 5
 }
