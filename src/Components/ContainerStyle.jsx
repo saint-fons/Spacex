@@ -25,16 +25,9 @@ const ContainerStyle = (props) => {
             <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
                 <>
                     <GlobalStyles/>
-                    <button
-                        onClick={toggleTheme}>
-                        {theme === 'light' ?
-                            <div>light</div>
-                            :
-                            <div>dark</div>
-                        }
-                    </button>
                     <Route exact path='/' render={() =>
                         <Launches
+                            toggleTheme={toggleTheme}
                             theme={theme}
                             FilteredLaunches={props.FilteredLaunches}
                             Paginate={props.Paginate}

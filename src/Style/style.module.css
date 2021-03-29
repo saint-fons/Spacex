@@ -21,6 +21,17 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .container .container__header .container__header_nav {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 30px;
+    background-color: blue;
+  }
   .container .container__header .container__address {
     min-width: 30%;
     max-height: 50px;

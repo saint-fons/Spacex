@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8570b616-554e-4f1b-86ab-eda1e479fb52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/ContainerStyle.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Style/dark.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Style/light.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Style/style.module-dist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/DatePickedInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickedInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ContainerStyle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContainerStyle.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Launches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Launches.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MetaDataInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MetaDataInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style/style.module-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module-dist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module.scss" afterDir="false" />
     </list>
@@ -94,7 +88,7 @@
       <workItem from="1616860551108" duration="630000" />
       <workItem from="1616913172834" duration="12612000" />
       <workItem from="1616931481335" duration="8473000" />
-      <workItem from="1616952561089" duration="4632000" />
+      <workItem from="1616952561089" duration="11514000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -222,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616937754022</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="dark mode">
+      <created>1616960442662</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1616960442662</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +261,7 @@
     <MESSAGE value="main page styled" />
     <MESSAGE value="style modified" />
     <MESSAGE value="migrate to modules. Router fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="migrate to modules. Router fixed" />
+    <MESSAGE value="dark mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="dark mode" />
   </component>
 </project>

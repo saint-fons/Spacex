@@ -29,6 +29,21 @@ $FullDisplay: 100%;
       background-repeat: no-repeat;
       background-size: cover;
 
+      .container__header_nav {
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        z-index: 5;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        width: 300px;
+        height: 30px;
+        background-color: blue;
+      }
+
 
       .container__address {
         min-width: $FullDisplay - 70%;
