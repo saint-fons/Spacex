@@ -1,15 +1,12 @@
 import React from 'react'
 import {compose} from "redux";
 import connect from "react-redux/lib/connect/connect";
-import Launches from "./Launches";
-import DatePickerLaunches from "./DatePickerLaunches";
-import {getData, updateCurrentPage, updateDate} from    "../Redux/Rocket-reducer";
+import {getData, updateCurrentPage, updateDate, updateSearchedDate} from "../Redux/Rocket-reducer";
 import {
     getLaunchesSS,
     getTotalPostsLengthSelector,
-    getSortedLaunchesSS,
+    getSortedLaunchesSS, getLaunchesDatesSS,
 } from "../Redux/Launches-selector";
-import {Route} from "react-router-dom";
 import {withRouter} from "react-router";
 import ContainerStyle from "./ContainerStyle";
 
@@ -26,7 +23,9 @@ class Container extends React.Component {
                 LaunchesPerPage={this.props.LaunchesPerPage}
                 TotalLaunches={this.props.getTotalPostsLengthSelector}
                 updateDate={this.props.updateDate}
+                updateSearchedDate={this.props.updateSearchedDate}
                 SortedLaunches={this.props.getSortedLaunchesSS}
+                LaunchesDates={this.props.getLaunchesDatesSS}
             />
         </div>
     }
@@ -37,6 +36,7 @@ let mapStateToProps = (state) => {
         getLaunchesSS: getLaunchesSS(state),
         getSortedLaunchesSS: getSortedLaunchesSS(state),
         getTotalPostsLengthSelector: getTotalPostsLengthSelector(state),
+        getLaunchesDatesSS: getLaunchesDatesSS(state),
         CurrentPage: state.LaunchesPage.CurrentPage,
         LaunchesPerPage: state.LaunchesPage.LaunchesPerPage,
 
@@ -46,6 +46,7 @@ let mapStateToProps = (state) => {
 export default compose(withRouter, connect(mapStateToProps, {
     getData,
     updateDate,
-    updateCurrentPage
+    updateCurrentPage,
+    updateSearchedDate
 }))
 (Container)

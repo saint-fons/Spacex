@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8570b616-554e-4f1b-86ab-eda1e479fb52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/ContainerStyle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContainerStyle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Launches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Launches.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pagination.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DatePickerLaunches.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickerLaunches.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Forms/NewForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Forms/NewForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Launches-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Launches-selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style.module-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module-dist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module.scss" afterDir="false" />
@@ -47,13 +50,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="F:\Applications\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -88,7 +92,8 @@
       <workItem from="1616860551108" duration="630000" />
       <workItem from="1616913172834" duration="12612000" />
       <workItem from="1616931481335" duration="8473000" />
-      <workItem from="1616952561089" duration="11514000" />
+      <workItem from="1616952561089" duration="12132000" />
+      <workItem from="1617096489830" duration="5418000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -223,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616960442662</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="nav menu">
+      <created>1617031427374</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1617031427374</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +274,7 @@
     <MESSAGE value="style modified" />
     <MESSAGE value="migrate to modules. Router fixed" />
     <MESSAGE value="dark mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="dark mode" />
+    <MESSAGE value="nav menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="nav menu" />
   </component>
 </project>

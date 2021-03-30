@@ -5,6 +5,7 @@ import {locationInfoAPI} from "../API/API";
 const SET_DATA = 'SET-DATA';
 const DATE_UPDATE = 'DATE-UPDATE';
 const UPDATE_CURRENT_PAGE = 'UPDATE-CURRENT-PAGE';
+const UPDATE_SEARCHED_DATE = 'UPDATE-SEARCHED-DATE';
 
 
 let initialState = {
@@ -123,7 +124,8 @@ let initialState = {
     }],
     Date: "2006",
     CurrentPage: 1,
-    LaunchesPerPage: 5
+    LaunchesPerPage: 5,
+    SearchedDate: null
 }
 
 
@@ -151,6 +153,14 @@ const rocketReducer = (
             return stateCopy
         }
 
+        case UPDATE_SEARCHED_DATE : {
+            stateCopy = {...state}
+            stateCopy.SearchedDate = action.date.split("").splice(0, 19).join("")
+            return stateCopy
+        }
+
+
+
 
         default:
             return state
@@ -166,6 +176,9 @@ export const updateDate = (date) =>
 
 export const updateCurrentPage = (CurrentPage) =>
     ({type: UPDATE_CURRENT_PAGE, CurrentPage})
+
+export const updateSearchedDate = (date) =>
+    ({type: UPDATE_SEARCHED_DATE, date})
 
 
 

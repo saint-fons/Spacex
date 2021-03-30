@@ -44,11 +44,18 @@ const onSubmit = async values => {
 
 const NewForm = (props) => {
 
-    const required = value => (value ? updateNewDate(value) : 'Required')
+    const requiredYearPicker = value => (value ? updateNewDate(value) : 'Required')
+    const requiredDatePicker = value => (value ? updateSearchedDate(value) : 'Required')
 
     function updateNewDate(date) {
         props.updateDate(date)
     }
+
+    function updateSearchedDate(date) {
+        props.updateSearchedDate(date)
+    }
+
+
 
     return (
         <MuiThemeProvider muiTheme={getMuiTheme()}>
@@ -65,26 +72,48 @@ const NewForm = (props) => {
                                 <Field
                                     name="datePicker"
                                     component={TextFieldAdapter}
-                                    validate={required}
+                                    validate={requiredYearPicker}
                                     hintText="Pick date"
                                     floatingLabelText="Pick date"
                                 />
-                            </div>{/*
+                            </div>
                             <div>
+                                <label>Data picker</label>
+                                <Field
+                                    name="timePicked"
+                                    component="select"
+                                    validate={requiredDatePicker}
+                                >
+                                    {
+                                        props.LaunchesDates.map(d =>
+                                            <option
+                                            key={d}
+                                            value={d}
+                                            >
+                                                {d}
+                                            </option>
+                                        )
+                                    }
+                                </Field>
+                            </div>
+
+
+                            {/*<div>
                                 <Field
                                     name="state"
                                     component={ReactSelectAdapter}
                                     options={states}
                                 />
-                            </div>
-                            <div>
+                            </div>*/}
+
+                            {/*<div>
                                 <Field
                                     name="employed"
                                     label="Employed?"
                                     component={ToggleAdapter}
                                     labelPosition="right"
                                 />
-                            </div>
+                            </div>*/}
                             <div className="buttons">
                                 <button type="submit" disabled={submitting}>
                                     Log In
@@ -99,7 +128,6 @@ const NewForm = (props) => {
                             </div>
 
                             <pre>{JSON.stringify(values, 0, 2)}</pre>
-                            */}
                         </form>
                     )}
                 />

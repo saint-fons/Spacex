@@ -41,7 +41,9 @@ const ContainerStyle = (props) => {
                     <Route exact path='/datepicker/datepicker/' render={() =>
                         <DatePickerLaunches
                             updateDate={props.updateDate}
+                            updateSearchedDate={props.updateSearchedDate}
                             SortedLaunches={props.SortedLaunches}
+                            LaunchesDates={props.LaunchesDates}
                         />}
                     />
                 </>

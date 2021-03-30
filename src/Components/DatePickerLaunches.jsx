@@ -10,6 +10,8 @@ const DatePickerLaunches = (props) => {
             <div className={s.container__header}>
                 <NewForm
                     updateDate={props.updateDate}
+                    updateSearchedDate={props.updateSearchedDate}
+                    LaunchesDates={props.LaunchesDates}
                 />
                 <NavLink to={'/'}
                 >

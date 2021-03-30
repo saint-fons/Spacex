@@ -20,6 +20,18 @@ export const getLaunchesSS = createSelector(
     }
 )
 
+
+export const getLaunchesDatesSS = createSelector(
+    getLaunchesSelector,
+    (state) => {
+         let newDate = state.LaunchesPage.launches.map(d =>
+            d.launch_date_utc
+        )
+        return newDate
+    }
+)
+
+
 export const getSortedLaunchesSS = createSelector(
     getLaunchesSelector,
     (state) => {
