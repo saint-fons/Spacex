@@ -32,6 +32,21 @@ export const getLaunchesDatesSS = createSelector(
 )
 
 
+export const getDatePickedSS = createSelector(
+    getLaunchesSelector,
+    (state) => {
+        let DatePicked = state.LaunchesPage.launches.filter(
+            f => f.launch_date_utc.split("").splice(0, 19).join("").includes(state.LaunchesPage.SearchedDate)
+        )
+        debugger
+        return DatePicked
+    }
+)
+
+
+
+
+
 export const getSortedLaunchesSS = createSelector(
     getLaunchesSelector,
     (state) => {

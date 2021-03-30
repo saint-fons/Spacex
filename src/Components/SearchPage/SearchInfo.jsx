@@ -1,32 +1,16 @@
-import Pagination from "./Pagination";
-import s from "./../Style/style.module.css"
+import s from "../../Style/style.module.css"
 
-const MetaDataInfo = (props) => {
+const SearchInfo = (props) => {
     return (
-
         <div>
-            <div className={s.paginationBar}>
-
-                <Pagination
-                    LaunchesPerPage={props.LaunchesPerPage}
-                    TotalLaunches={props.TotalLaunches}
-                    Paginate={props.Paginate}
-                />
-            </div>
-
-            <div className={
-
-                props.theme === 'light' ? s.container__header__data : s.container__header__data_black
-
-
-            }>
+            <div className={s.container__header__data}>
                 <div className={s.container__header__data__element}>
                     <div className={s.container__header__data__element__header}>
                         Name/Success/Launch date
                     </div>
                     <div className={s.container__header__data__element__bottom}>
                         <div>
-                            {props.FilteredLaunches.map(n =>
+                            {props.SortedLaunches.map(n =>
                                 <div
                                     className={s.container__header__data__element__bottom__list}
                                     key={n.flight_number}>
@@ -48,7 +32,7 @@ const MetaDataInfo = (props) => {
                     </div>
                     <div className={s.container__header__data__element__bottom}>
                         <div>
-                            {props.FilteredLaunches.map(d =>
+                            {props.SortedLaunches.map(d =>
                                 <div
                                     className={s.container__header__data__element__bottom__list}
                                     key={Math.random()}>
@@ -70,7 +54,7 @@ const MetaDataInfo = (props) => {
                     </div>
                     <div className={s.container__header__data__element__bottom}>
                         <div>
-                            {props.FilteredLaunches.map(p =>
+                            {props.SortedLaunches.map(p =>
                                 <div
                                     className={s.container__header__data__element__bottom__list}
                                     key={Math.random()}>
@@ -89,4 +73,4 @@ const MetaDataInfo = (props) => {
     )
 }
 
-export default MetaDataInfo
+export default SearchInfo

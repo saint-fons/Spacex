@@ -5,7 +5,7 @@ import {getData, updateCurrentPage, updateDate, updateSearchedDate} from "../Red
 import {
     getLaunchesSS,
     getTotalPostsLengthSelector,
-    getSortedLaunchesSS, getLaunchesDatesSS,
+    getSortedLaunchesSS, getLaunchesDatesSS, getDatePickedSS,
 } from "../Redux/Launches-selector";
 import {withRouter} from "react-router";
 import ContainerStyle from "./ContainerStyle";
@@ -26,6 +26,7 @@ class Container extends React.Component {
                 updateSearchedDate={this.props.updateSearchedDate}
                 SortedLaunches={this.props.getSortedLaunchesSS}
                 LaunchesDates={this.props.getLaunchesDatesSS}
+                DatePicked={this.props.getDatePicked}
             />
         </div>
     }
@@ -37,6 +38,7 @@ let mapStateToProps = (state) => {
         getSortedLaunchesSS: getSortedLaunchesSS(state),
         getTotalPostsLengthSelector: getTotalPostsLengthSelector(state),
         getLaunchesDatesSS: getLaunchesDatesSS(state),
+        getDatePicked: getDatePickedSS(state),
         CurrentPage: state.LaunchesPage.CurrentPage,
         LaunchesPerPage: state.LaunchesPage.LaunchesPerPage,
 

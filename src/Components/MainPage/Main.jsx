@@ -1,11 +1,10 @@
 import React from 'react'
-import MetaDataInfo from "./MetaDataInfo";
-import s from "./../Style/style.module.css"
-import light from "./../Style/light.jpg"
-import {SimpleExample} from "./theme";
+import MainInfo from "./MainInfo";
+import s from "../../Style/style.module.css"
+import light from "../../Style/light.jpg"
 import {NavLink} from "react-router-dom";
 
-const Launches = (props) => {
+const Main = (props) => {
     return (
         <div>
             <div className={s.container}>
@@ -14,7 +13,7 @@ const Launches = (props) => {
 
                     <div>
                         <div className={s.container__header_nav}>
-                            <NavLink to={'/datepicker/datepicker'}
+                            <NavLink to={'/search/'}
                             >
                                 Search 🔎
                             </NavLink>
@@ -29,7 +28,7 @@ const Launches = (props) => {
                             </button>
 
                         </div>
-                        <MetaDataInfo
+                        <MainInfo
                             theme={props.theme}
                             FilteredLaunches={props.FilteredLaunches}
                             CurrentPage={props.CurrentPage}
@@ -45,4 +44,4 @@ const Launches = (props) => {
 }
 
 
-export default Launches
+export default Main

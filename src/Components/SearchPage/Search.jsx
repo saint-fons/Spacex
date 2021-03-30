@@ -1,14 +1,14 @@
 import React from 'react'
-import NewForm from "./Forms/NewForm";
-import s from "./../Style/style.module.css"
-import DatePickedInfo from "./DatePickedInfo";
+import SearchForm from "./Forms/SearchForm";
+import s from "../../Style/style.module.css"
+import SearchInfo from "./SearchInfo";
 import {NavLink} from "react-router-dom";
 
-const DatePickerLaunches = (props) => {
+const Search = (props) => {
     return (
         <div className={s.container}>
             <div className={s.container__header}>
-                <NewForm
+                <SearchForm
                     updateDate={props.updateDate}
                     updateSearchedDate={props.updateSearchedDate}
                     LaunchesDates={props.LaunchesDates}
@@ -17,8 +17,9 @@ const DatePickerLaunches = (props) => {
                 >
                     back
                 </NavLink>
+
                 <div>
-                    <DatePickedInfo
+                    <SearchInfo
                         SortedLaunches={props.SortedLaunches}
                     />
                 </div>
@@ -28,4 +29,4 @@ const DatePickerLaunches = (props) => {
 }
 
 
-export default DatePickerLaunches
+export default Search

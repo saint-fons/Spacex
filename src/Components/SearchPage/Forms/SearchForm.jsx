@@ -1,17 +1,16 @@
 import React from 'react'
-import { render } from 'react-dom'
-import Styles from '../../Style/Form-Styles'
-import { Form, Field } from 'react-final-form'
+import {render} from 'react-dom'
+import Styles from '../../../Style/Form-Styles'
+import {Form, Field} from 'react-final-form'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import TextField from 'material-ui/TextField'
 import Toggle from 'material-ui/Toggle'
 import Select from 'react-select'
-import states from './states'
-import {updateDate} from "../../Redux/Rocket-reducer";
+import {NavLink} from "react-router-dom";
 
 
-const TextFieldAdapter = ({ input, meta, ...rest }) => (
+const TextFieldAdapter = ({input, meta, ...rest}) => (
     <TextField
         {...input}
         {...rest}
@@ -20,7 +19,7 @@ const TextFieldAdapter = ({ input, meta, ...rest }) => (
     />
 )
 
-const ToggleAdapter = ({ input: { onChange, value }, label, ...rest }) => (
+const ToggleAdapter = ({input: {onChange, value}, label, ...rest}) => (
     <Toggle
         label={label}
         toggled={!!value}
@@ -29,8 +28,8 @@ const ToggleAdapter = ({ input: { onChange, value }, label, ...rest }) => (
     />
 )
 
-const ReactSelectAdapter = ({ input, ...rest }) => (
-    <Select {...input} {...rest} searchable />
+const ReactSelectAdapter = ({input, ...rest}) => (
+    <Select {...input} {...rest} searchable/>
 )
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
@@ -41,8 +40,7 @@ const onSubmit = async values => {
 }
 
 
-
-const NewForm = (props) => {
+const SearchForm = (props) => {
 
     const requiredYearPicker = value => (value ? updateNewDate(value) : 'Required')
     const requiredDatePicker = value => (value ? updateSearchedDate(value) : 'Required')
@@ -56,17 +54,18 @@ const NewForm = (props) => {
     }
 
 
-
     return (
         <MuiThemeProvider muiTheme={getMuiTheme()}>
             <Styles>
                 <Form
                     onSubmit={onSubmit}
-                    render={({ handleSubmit,
+                    render={({
+                                 handleSubmit,
                                  form,
                                  submitting,
                                  pristine,
-                                 values }) => (
+                                 values
+                             }) => (
                         <form onSubmit={handleSubmit}>
                             <div>
                                 <Field
@@ -87,10 +86,11 @@ const NewForm = (props) => {
                                     {
                                         props.LaunchesDates.map(d =>
                                             <option
-                                            key={d}
-                                            value={d}
+                                                key={d}
+                                                value={d}
                                             >
                                                 {d}
+
                                             </option>
                                         )
                                     }
@@ -126,6 +126,12 @@ const NewForm = (props) => {
                                     Reset
                                 </button>
                             </div>
+                            <div>
+                                <NavLink to={'/DatePicked/'}
+                                >
+                                    Date picked
+                                </NavLink>
+                            </div>
 
                             <pre>{JSON.stringify(values, 0, 2)}</pre>
                         </form>
@@ -137,4 +143,4 @@ const NewForm = (props) => {
 
 }
 
-export default NewForm
+export default SearchForm

@@ -1,16 +1,32 @@
-import s from "./../Style/style.module.css"
+import Pagination from "./Pagination";
+import s from "../../Style/style.module.css"
 
-const DatePickedInfo = (props) => {
+const MainInfo = (props) => {
     return (
+
         <div>
-            <div className={s.container__header__data}>
+            <div className={s.paginationBar}>
+
+                <Pagination
+                    LaunchesPerPage={props.LaunchesPerPage}
+                    TotalLaunches={props.TotalLaunches}
+                    Paginate={props.Paginate}
+                />
+            </div>
+
+            <div className={
+
+                props.theme === 'light' ? s.container__header__data : s.container__header__data_black
+
+
+            }>
                 <div className={s.container__header__data__element}>
                     <div className={s.container__header__data__element__header}>
                         Name/Success/Launch date
                     </div>
                     <div className={s.container__header__data__element__bottom}>
                         <div>
-                            {props.SortedLaunches.map(n =>
+                            {props.FilteredLaunches.map(n =>
                                 <div
                                     className={s.container__header__data__element__bottom__list}
                                     key={n.flight_number}>
@@ -32,7 +48,7 @@ const DatePickedInfo = (props) => {
                     </div>
                     <div className={s.container__header__data__element__bottom}>
                         <div>
-                            {props.SortedLaunches.map(d =>
+                            {props.FilteredLaunches.map(d =>
                                 <div
                                     className={s.container__header__data__element__bottom__list}
                                     key={Math.random()}>
@@ -54,7 +70,7 @@ const DatePickedInfo = (props) => {
                     </div>
                     <div className={s.container__header__data__element__bottom}>
                         <div>
-                            {props.SortedLaunches.map(p =>
+                            {props.FilteredLaunches.map(p =>
                                 <div
                                     className={s.container__header__data__element__bottom__list}
                                     key={Math.random()}>
@@ -73,4 +89,4 @@ const DatePickedInfo = (props) => {
     )
 }
 
-export default DatePickedInfo
+export default MainInfo
