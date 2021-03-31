@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8570b616-554e-4f1b-86ab-eda1e479fb52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Style/IMG/readme/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Style/IMG/readme/2008_year.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Style/IMG/readme/date_picked.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Style/IMG/readme/main_page.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hs_err_pid6516.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ContainerStyle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContainerStyle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/DatePickedPage/DatePicked.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickedPage/DatePicked.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/MainInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/MainInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/Pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchPage/Forms/SearchForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchPage/Forms/SearchForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SearchPage/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchPage/Search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/style.module-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module-dist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +88,8 @@
       <workItem from="1616931481335" duration="8473000" />
       <workItem from="1616952561089" duration="12132000" />
       <workItem from="1617096489830" duration="11364000" />
-      <workItem from="1617167591941" duration="14529000" />
+      <workItem from="1617167591941" duration="15247000" />
+      <workItem from="1617183858828" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -281,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617179728372</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="readme.md added">
+      <created>1617183102372</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1617183102372</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +293,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initial" />
     <MESSAGE value="redux state init" />
     <MESSAGE value="displayed" />
     <MESSAGE value="date selector created" />
@@ -326,6 +317,7 @@
     <MESSAGE value="styles ver 1" />
     <MESSAGE value="base logic finished" />
     <MESSAGE value="dates format fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="dates format fixed" />
+    <MESSAGE value="readme.md added" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme.md added" />
   </component>
 </project>
