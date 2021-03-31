@@ -50,7 +50,7 @@ const DatePickedInfo = (props) => {
                 </div>
                 <div className={s.container__header__data__element}>
                     <div className={s.container__header__data__element__header}>
-                        patch
+                        Patch
                     </div>
                     <div className={s.container__header__data__element__bottom}>
                         <div>

@@ -78,6 +78,32 @@ export default styled.div`
       margin-top: 15px;
     }
 
+    & > div {
+      display: flex;
+      flex-flow: row nowrap;
+      line-height: 2em;
+      margin: 5px;
+    }
+
+    & > label {
+      color: #333;
+      width: 110px;
+      font-size: 1em;
+      line-height: 32px;
+    }
+
+    & > input,
+    & > select,
+    & > textarea {
+      flex: 1;
+      padding: 3px 5px;
+      font-size: 1em;
+      margin-left: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+
     button {
       margin: 0 10px;
 
@@ -109,5 +135,5 @@ export default styled.div`
       padding: 20px;
     }
   }
-        
+
 `

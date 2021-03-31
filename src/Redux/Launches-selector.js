@@ -11,6 +11,8 @@ export const getTotalPostsLengthSelector = (state) => {
 }
 
 
+
+//определение индексов для пагинации
 export const getLaunchesSS = createSelector(
     getLaunchesSelector,
     (state) => {
@@ -21,6 +23,8 @@ export const getLaunchesSS = createSelector(
 )
 
 
+
+//выборка дат запуска по UTC
 export const getLaunchesDatesSS = createSelector(
     getLaunchesSelector,
     (state) => {
@@ -32,13 +36,14 @@ export const getLaunchesDatesSS = createSelector(
 )
 
 
+
+//Выборка выбранной пользователем даты
 export const getDatePickedSS = createSelector(
     getLaunchesSelector,
     (state) => {
         let DatePicked = state.LaunchesPage.launches.filter(
             f => f.launch_date_utc.split("").splice(0, 19).join("").includes(state.LaunchesPage.SearchedDate)
         )
-        debugger
         return DatePicked
     }
 )
@@ -46,7 +51,7 @@ export const getDatePickedSS = createSelector(
 
 
 
-
+//Выборка по выбранному пользователем году
 export const getSortedLaunchesSS = createSelector(
     getLaunchesSelector,
     (state) => {
@@ -65,26 +70,3 @@ export const getSortedLaunchesSS = createSelector(
 
     }
 )
-
-
-/*export const getLaunchesSS = createSelector(
-    getLaunchesSelector,
-    (state) => {
-
-        let FilteredLaunches = {
-            SortedLaunches: null,
-            TotalLaunches: null
-        }
-
-        const indexOfLastLaunch = state.LaunchesPage.CurrentPage * state.LaunchesPage.LaunchesPerPage
-        const indexOfFirstLaunch = indexOfLastLaunch - state.LaunchesPage.LaunchesPerPage
-        const currentLaunch = state.LaunchesPage.launches.slice(indexOfFirstLaunch, indexOfLastLaunch)
-        let sortLaunches = currentLaunch.filter(
-            f => f.launch_date_local.includes(state.LaunchesPage.Date)
-        )
-        FilteredLaunches.SortedLaunches = sortLaunches
-        FilteredLaunches.TotalLaunches = sortLaunches.length
-
-        return sortLaunches
-    }
-)*/

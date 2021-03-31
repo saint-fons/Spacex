@@ -6,6 +6,7 @@ const SET_DATA = 'SET-DATA';
 const DATE_UPDATE = 'DATE-UPDATE';
 const UPDATE_CURRENT_PAGE = 'UPDATE-CURRENT-PAGE';
 const UPDATE_SEARCHED_DATE = 'UPDATE-SEARCHED-DATE';
+const UPDATE_PREV_PAGE = 'UPDATE-PREV-PAGE';
 
 
 let initialState = {
@@ -125,7 +126,7 @@ let initialState = {
     Date: "2006",
     CurrentPage: 1,
     LaunchesPerPage: 5,
-    SearchedDate: null
+    SearchedDate: null,
 }
 
 
@@ -160,6 +161,19 @@ const rocketReducer = (
         }
 
 
+        case UPDATE_PREV_PAGE : {
+            stateCopy = {...state}
+            if(stateCopy.CurrentPage > 1) {
+                stateCopy.CurrentPage = stateCopy.CurrentPage - 1
+            }
+            return stateCopy
+        }
+
+
+
+
+
+
 
 
         default:
@@ -179,6 +193,9 @@ export const updateCurrentPage = (CurrentPage) =>
 
 export const updateSearchedDate = (date) =>
     ({type: UPDATE_SEARCHED_DATE, date})
+
+export const prevPage = () =>
+    ({type: UPDATE_PREV_PAGE})
 
 
 

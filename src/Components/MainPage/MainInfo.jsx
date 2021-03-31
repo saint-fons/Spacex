@@ -5,20 +5,23 @@ const MainInfo = (props) => {
     return (
 
         <div>
-            <div className={s.paginationBar}>
+            <div className={s.paginationBar__light}>
 
                 <Pagination
                     LaunchesPerPage={props.LaunchesPerPage}
                     TotalLaunches={props.TotalLaunches}
                     Paginate={props.Paginate}
+                    prevPage={props.prevPage}
+                    CurrentPage={props.CurrentPage}
+                    theme={props.theme}
+                    toggleTheme={props.toggleTheme}
                 />
             </div>
 
             <div className={
-
-                props.theme === 'light' ? s.container__header__data : s.container__header__data_black
-
-
+                props.theme === 'light' ?
+                    s.container__header__data :
+                    s.container__header__data_black
             }>
                 <div className={s.container__header__data__element}>
                     <div className={s.container__header__data__element__header}>
@@ -66,7 +69,7 @@ const MainInfo = (props) => {
                 </div>
                 <div className={s.container__header__data__element}>
                     <div className={s.container__header__data__element__header}>
-                        patch
+                        Patch
                     </div>
                     <div className={s.container__header__data__element__bottom}>
                         <div>

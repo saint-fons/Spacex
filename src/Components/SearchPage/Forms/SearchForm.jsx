@@ -35,8 +35,6 @@ const ReactSelectAdapter = ({input, ...rest}) => (
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 const onSubmit = async values => {
-    await sleep(300)
-    window.alert(JSON.stringify(values, 0, 2))
 }
 
 
@@ -72,8 +70,8 @@ const SearchForm = (props) => {
                                     name="datePicker"
                                     component={TextFieldAdapter}
                                     validate={requiredYearPicker}
-                                    hintText="Pick date"
-                                    floatingLabelText="Pick date"
+                                    hintText="Choose a year from 2006 to 2020"
+                                    floatingLabelText="Choose a year from 2006 to 2020"
                                 />
                             </div>
                             <div>
@@ -96,44 +94,32 @@ const SearchForm = (props) => {
                                     }
                                 </Field>
                             </div>
-
-
-                            {/*<div>
-                                <Field
-                                    name="state"
-                                    component={ReactSelectAdapter}
-                                    options={states}
-                                />
-                            </div>*/}
-
-                            {/*<div>
-                                <Field
-                                    name="employed"
-                                    label="Employed?"
-                                    component={ToggleAdapter}
-                                    labelPosition="right"
-                                />
-                            </div>*/}
                             <div className="buttons">
-                                <button type="submit" disabled={submitting}>
-                                    Log In
-                                </button>
                                 <button
+                                    type="button"
+                                    disabled={submitting || pristine}
+                                >
+                                    <NavLink to={'/DatePicked/'}
+                                    >
+                                        Date picked
+                                    </NavLink>
+                                </button><button
+                                    type="button"
+                                >
+                                <NavLink to={'/'}
+                                >
+                                    Main page
+                                </NavLink>
+                                </button>
+
+                                {/*<button
                                     type="button"
                                     onClick={form.reset}
                                     disabled={submitting || pristine}
                                 >
                                     Reset
-                                </button>
+                                </button>*/}
                             </div>
-                            <div>
-                                <NavLink to={'/DatePicked/'}
-                                >
-                                    Date picked
-                                </NavLink>
-                            </div>
-
-                            <pre>{JSON.stringify(values, 0, 2)}</pre>
                         </form>
                     )}
                 />

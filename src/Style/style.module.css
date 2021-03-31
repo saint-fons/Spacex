@@ -16,21 +16,20 @@
   .container .container__header {
     max-width: 100%;
     min-height: 100%;
-    background-image: url("dark.jpg");
+    background-image: url("IMG/dark.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .container .container__header .container__header_nav {
-    position: absolute;
-    top: 7%;
-    left: 50%;
-    z-index: 5;
     display: flex;
     justify-content: space-between;
-    width: 300px;
-    height: 30px;
-    background-color: blue;
+    max-width: 100%;
+    min-height: 50px;
+  }
+  .container .container__header .container__header_nav .container__header_nav__img {
+    max-width: 150px;
+    min-height: 150px;
   }
   .container .container__header .container__address {
     min-width: 30%;
@@ -43,11 +42,12 @@
     top: 0;
     left: 43%;
   }
-  .container .container__header .paginationBar {
-    width: 500px;
-    height: 50px;
-    background-color: green;
+  .container .container__header .paginationBar__light {
+    max-width: 70%;
+    min-height: 150px;
+    color: black;
     margin: auto;
+    text-align: center;
   }
   .container .container__header .container__header__data {
     max-width: 80%;

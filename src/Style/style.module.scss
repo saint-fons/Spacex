@@ -24,30 +24,31 @@ $FullDisplay: 100%;
       max-width: $FullDisplay;
       min-height: $FullDisplay;
 
-      background-image: url("dark.jpg");
+      background-image: url("IMG/dark.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
 
       .container__header_nav {
-        position: absolute;
-        top: 7%;
-        left: 50%;
-        z-index: 5;
 
         display: flex;
 
         justify-content: space-between;
 
-        width: 300px;
-        height: 30px;
-        background-color: blue;
+        max-width: $FullDisplay;
+        min-height: 50px;
+
+        .container__header_nav__img {
+          max-width: 150px;
+          min-height: 150px;
+        }
       }
 
 
       .container__address {
         min-width: $FullDisplay - 70%;
         max-height: 50px;
+
         .NevaTripLogo {
           width: 350px;
           height: 150px;
@@ -59,12 +60,15 @@ $FullDisplay: 100%;
       }
 
 
-      .paginationBar {
-        width: 500px;
-        height: 50px;
-        background-color: green;
+      .paginationBar__light {
+        max-width: $FullDisplay - 30%;
+        min-height: 150px;
+
+        color: black;
 
         margin: auto;
+
+        text-align: center;
       }
 
       .container__header__data {
@@ -116,6 +120,7 @@ $FullDisplay: 100%;
             text-align: center;
 
             z-index: 5;
+
             .green {
               color: green;
             }
@@ -127,6 +132,7 @@ $FullDisplay: 100%;
             .container__header__data__element__bottom__list {
               max-width: 450px;
               min-height: 230px;
+
               .container__header__data__element__bottom__list__labels {
                 max-width: 250px;
                 min-height: 250px;
@@ -189,6 +195,7 @@ $FullDisplay: 100%;
             z-index: 5;
 
             color: white;
+
             .green {
               color: green;
             }
@@ -200,6 +207,7 @@ $FullDisplay: 100%;
             .container__header__data__element__bottom__list {
               max-width: 450px;
               min-height: 230px;
+
               .container__header__data__element__bottom__list__labels {
                 max-width: 250px;
                 min-height: 250px;
@@ -212,8 +220,8 @@ $FullDisplay: 100%;
       }
 
 
-
     }
+
     .bottom {
       width: $FullDisplay;
       height: $FullDisplay - 60%;
@@ -221,7 +229,6 @@ $FullDisplay: 100%;
       z-index: 1;
     }
   }
-
 
 
   .payment {

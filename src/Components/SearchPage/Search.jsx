@@ -2,7 +2,6 @@ import React from 'react'
 import SearchForm from "./Forms/SearchForm";
 import s from "../../Style/style.module.css"
 import SearchInfo from "./SearchInfo";
-import {NavLink} from "react-router-dom";
 
 const Search = (props) => {
     return (
@@ -13,11 +12,6 @@ const Search = (props) => {
                     updateSearchedDate={props.updateSearchedDate}
                     LaunchesDates={props.LaunchesDates}
                 />
-                <NavLink to={'/'}
-                >
-                    back
-                </NavLink>
-
                 <div>
                     <SearchInfo
                         SortedLaunches={props.SortedLaunches}

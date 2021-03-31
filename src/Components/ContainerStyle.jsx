@@ -19,12 +19,14 @@ const ContainerStyle = (props) => {
             setTheme('light');
         }
     }
-    let c = "name"
 
 
     return (
         <div>
-            <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+            <ThemeProvider
+                theme={theme === 'light' ?
+                    lightTheme :
+                    darkTheme}>
                 <>
                     <GlobalStyles/>
                     <Route exact path='/' render={() =>
@@ -37,6 +39,8 @@ const ContainerStyle = (props) => {
                             TotalLaunches={props.TotalLaunches}
                             updateDate={props.updateDate}
                             SortedLaunches={props.SortedLaunches}
+                            prevPage={props.prevPage}
+                            CurrentPage={props.CurrentPage}
                         />}
                     />
 

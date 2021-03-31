@@ -1,7 +1,7 @@
 import React from 'react'
 import {compose} from "redux";
 import connect from "react-redux/lib/connect/connect";
-import {getData, updateCurrentPage, updateDate, updateSearchedDate} from "../Redux/Rocket-reducer";
+import {getData, prevPage, updateCurrentPage, updateDate, updateSearchedDate} from "../Redux/Rocket-reducer";
 import {
     getLaunchesSS,
     getTotalPostsLengthSelector,
@@ -27,6 +27,8 @@ class Container extends React.Component {
                 SortedLaunches={this.props.getSortedLaunchesSS}
                 LaunchesDates={this.props.getLaunchesDatesSS}
                 DatePicked={this.props.getDatePicked}
+                prevPage={this.props.prevPage}
+                CurrentPage={this.props.CurrentPage}
             />
         </div>
     }
@@ -49,6 +51,7 @@ export default compose(withRouter, connect(mapStateToProps, {
     getData,
     updateDate,
     updateCurrentPage,
-    updateSearchedDate
+    updateSearchedDate,
+    prevPage
 }))
 (Container)
