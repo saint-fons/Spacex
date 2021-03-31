@@ -15,10 +15,13 @@ import ContainerStyle from "./ContainerStyle";
 class Container extends React.Component {
 
     componentDidMount() {
+        /*Обращаемся к серверу*/
         this.props.getData()
     }
+
     render() {
         return <div>
+            {/*Контейнер глобальных стилей для состояния цветовой темы*/}
             <ContainerStyle
                 FilteredLaunches={this.props.getLaunchesSS}
                 Paginate={this.props.updateCurrentPage}
@@ -49,11 +52,13 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default compose(withRouter, connect(mapStateToProps, {
-    getData,
-    updateDate,
-    updateCurrentPage,
-    updateSearchedDate,
-    prevPage
-}))
+export default compose
+(withRouter, connect(mapStateToProps,
+    {
+        getData,
+        updateDate,
+        updateCurrentPage,
+        updateSearchedDate,
+        prevPage
+    }))
 (Container)

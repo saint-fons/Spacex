@@ -11,6 +11,7 @@ import DatePicked from "./DatePickedPage/DatePicked";
 
 const ContainerStyle = (props) => {
 
+    /*Светлая/темная тема*/
     const [theme, setTheme] = useState('light');
     const toggleTheme = () => {
         if (theme === 'light') {
@@ -30,6 +31,7 @@ const ContainerStyle = (props) => {
                 <>
                     <GlobalStyles/>
                     <Route exact path='/' render={() =>
+                        /*Стартовая страница*/
                         <Main
                             toggleTheme={toggleTheme}
                             theme={theme}
@@ -45,6 +47,7 @@ const ContainerStyle = (props) => {
                     />
 
                     <Route exact path='/search/' render={() =>
+                        /*Страница поиска*/
                         <Search
                             theme={theme}
                             updateDate={props.updateDate}
@@ -55,6 +58,7 @@ const ContainerStyle = (props) => {
                     />
 
                     <Route exact path="/DatePicked/" render={() =>
+                        /*Страница с выбранной датой*/
                         <DatePicked
                             theme={theme}
                             DatePicked={props.DatePicked}

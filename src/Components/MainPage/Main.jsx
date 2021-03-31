@@ -8,6 +8,7 @@ const Main = (props) => {
             <div className={s.container}>
                 <div className={s.container__header}>
                     <div>
+                        {/*Таблица для данных с сервера*/}
                         <MainInfo
                             theme={props.theme}
                             toggleTheme={props.toggleTheme}

@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# SpaceX Rest API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###Живая версия - [LiveVersion](https://spacex-saint-fons.vercel.app/)
+###ТЗ - [notion.so](https://www.notion.so/front-end-258e55dfd25e40f09d1f342f8e9a7aa5)
 
-## Available Scripts
+## Для запуска:
 
-In the project directory, you can run:
-
+### `yarn install`
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Main the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Продакшн версия:
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###Структура папок;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![img.jpg](src/Style/IMG/readme/1.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###./src/API/ (Файл запрос axios запроса к API SpaceX https://api.spacexdata.com/v3/launches)
+###./src/Components/Container (Компонента для предоставления данных из state менеджера)
+###./src/Components/ContainerStyle (Компонента для состояния темной темы)
+###./src/Components/Redux (Файлы state менеджера и файл селектора)
+###./src/Components/Style (Файлы стилей)
 
-### `yarn eject`
+![img.jpg](src/Style/IMG/readme/main_page.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###Главная страница содержит элементы;
+####Переход на страницу поиска ![img.png](src/Style/IMG/search.png)
+####Переключатель темы ![img.png](src/Style/IMG/moon.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+###Страница поиска содержит форму ввода года, выбор конкретной даты старта. Кнопку выбора даты и кнопку возврата на главную страницу;
+![img.jpg](src/Style/IMG/readme/2008_year.jpg)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+####После выбора даты и нажатия кнопки Date picked выполняется переход на страницу с информацией о конкретном пуске ракты
+![img.jpg](src/Style/IMG/readme/date_picked.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Работы выполнена для [ligaa.agency](https://ligaa.agency/), без ментора или сторонней помощи.

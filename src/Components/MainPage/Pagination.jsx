@@ -49,6 +49,7 @@ const Pagination = (props) => {
                     ))
                 }
                 <div className={s.container__header_nav}>
+                    {/*Ссылка на страницу поиска*/}
                     <NavLink to={'/search/'}
                     >
                         <img
@@ -57,10 +58,10 @@ const Pagination = (props) => {
                             alt={"https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/271/magnifying-glass-tilted-right_1f50e.png"}/>
                     </NavLink>
 
+                    {/*Переключатель цветовой темы*/}
                     <span
                         onClick={props.toggleTheme}
                     >
-
                         {props.theme === 'light' ?
                             <div>
                                 <img

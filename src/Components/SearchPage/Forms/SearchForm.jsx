@@ -24,13 +24,16 @@ const onSubmit = async values => {
 
 const SearchForm = (props) => {
 
+    /*Валидация на наличие данных*/
     const requiredYearPicker = value => (value ? updateNewDate(value) : 'Required')
     const requiredDatePicker = value => (value ? updateSearchedDate(value) : 'Required')
 
+    /*Диспатч введенной даты*/
     function updateNewDate(date) {
         props.updateDate(date)
     }
 
+    /*Диспатч даты выбранной из списка*/
     function updateSearchedDate(date) {
         props.updateSearchedDate(date)
     }
@@ -55,7 +58,7 @@ const SearchForm = (props) => {
                                 />
                             </div>
                             <div>
-                                <label>Data picker</label>
+                                <label>Date picker</label>
                                 <Field
                                     name="timePicked"
                                     component="select"

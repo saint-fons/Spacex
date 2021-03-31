@@ -1,10 +1,10 @@
-import ShopContainer from "./Components/Container";
+import Container from "./Components/Container";
 
 
 function App() {
   return (
     <div>
-      <ShopContainer />
+      <Container />
     </div>
   );
 }

@@ -6,7 +6,7 @@ const MainInfo = (props) => {
 
         <div>
             <div className={s.paginationBar__light}>
-
+                {/*Постраничный вывод*/}
                 <Pagination
                     LaunchesPerPage={props.LaunchesPerPage}
                     TotalLaunches={props.TotalLaunches}

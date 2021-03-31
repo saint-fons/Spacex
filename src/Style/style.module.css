@@ -5,9 +5,8 @@
   font-family: "Rubik", sans-serif;
 }
 
-/******************************************HEADER***********************************/
+/*DESKTOP*/
 @media (min-width: 720px) {
-  /*HEADER*/
   .container {
     width: 100%;
     height: 100%;
@@ -155,157 +154,160 @@
     margin: auto;
   }
 }
-/*MOBILE*/
+/*MOBILE* < 720/
+
 @media (max-width: 720px) {
-  /*HEADER*/
-  .container {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-  .container .container__header {
-    max-width: 100%;
-    min-height: 100%;
-    background-image: url("IMG/dark.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .container .container__header .container__header_nav__img__center {
-    max-width: 100px;
-    min-height: 100px;
-    margin: auto auto auto 50%;
-  }
-  .container .container__header .container__header_nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    min-height: 50px;
-  }
-  .container .container__header .container__header_nav .container__header_nav__img {
-    max-width: 100px;
-    min-height: 100px;
-  }
-  .container .container__header .container__address {
-    min-width: 30%;
-    max-height: 50px;
-  }
-  .container .container__header .paginationBar__light {
-    max-width: 70%;
-    min-height: 150px;
-    color: black;
-    margin: auto;
-    text-align: center;
-  }
-  .container .container__header .container__header__data {
-    max-width: 80%;
-    min-height: 900px;
-    margin: 5% auto auto auto;
-    border-radius: 25px;
-    display: flex;
-    background-color: white;
-    position: relative;
-    top: 0;
-    z-index: 5;
-  }
-  .container .container__header .container__header__data .container__header__data__element {
-    width: 35%;
-    min-height: 250px;
-    z-index: 5;
-  }
-  .container .container__header .container__header__data .container__header__data__element .container__header__data__element__header {
-    max-width: 250px;
-    min-height: 50px;
-    margin: auto;
-    padding-top: 25px;
-    font-size: 17px;
-    color: darkgray;
-    text-align: center;
-  }
-  .container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom {
-    max-width: 500px;
-    min-height: 100px;
-    margin: auto;
-    font-size: 14px;
-    text-align: center;
-    z-index: 5;
-  }
-  .container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom .green {
-    color: green;
-  }
-  .container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom .red {
-    color: red;
-  }
-  .container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom .container__header__data__element__bottom__list {
-    max-width: 450px;
-    min-height: 230px;
-  }
-  .container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom .container__header__data__element__bottom__list .container__header__data__element__bottom__list__labels {
-    max-width: 100px;
-    min-height: 100px;
-  }
-  .container .container__header .container__header__data_black {
-    max-width: 80%;
-    min-height: 900px;
-    margin: 5% auto auto auto;
-    border-radius: 25px;
-    display: flex;
-    background-color: black;
-    position: relative;
-    top: 0;
-    z-index: 5;
-  }
-  .container .container__header .container__header__data_black .container__header__data__element {
-    width: 35%;
-    min-height: 250px;
-    z-index: 5;
-  }
-  .container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__header {
-    max-width: 250px;
-    min-height: 50px;
-    margin: auto;
-    padding-top: 25px;
-    font-size: 17px;
-    color: white;
-    text-align: center;
-  }
-  .container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__bottom {
-    max-width: 500px;
-    min-height: 100px;
-    margin: auto;
-    font-size: 14px;
-    text-align: center;
-    z-index: 5;
-    color: white;
-  }
-  .container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__bottom .green {
-    color: green;
-  }
-  .container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__bottom .red {
-    color: red;
-  }
-  .container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__bottom .container__header__data__element__bottom__list {
-    max-width: 450px;
-    min-height: 230px;
-  }
-  .container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__bottom .container__header__data__element__bottom__list .container__header__data__element__bottom__list__labels {
-    max-width: 100px;
-    min-height: 100px;
-  }
-  .container .bottom {
-    width: 100%;
-    height: 40%;
-    z-index: 1;
-  }
 
-  .payment {
-    width: 350px;
-    height: 250px;
-    background-color: aqua;
-    margin: auto;
-  }
+
+  /*HEADER*/
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
-/*MOBILE 420*/
+.container .container__header {
+  max-width: 100%;
+  min-height: 100%;
+  background-image: url("IMG/dark.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .container__header .container__header_nav__img__center {
+  max-width: 100px;
+  min-height: 100px;
+  margin: auto auto auto 50%;
+}
+.container .container__header .container__header_nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  min-height: 50px;
+}
+.container .container__header .container__header_nav .container__header_nav__img {
+  max-width: 100px;
+  min-height: 100px;
+}
+.container .container__header .container__address {
+  min-width: 30%;
+  max-height: 50px;
+}
+.container .container__header .paginationBar__light {
+  max-width: 70%;
+  min-height: 150px;
+  color: black;
+  margin: auto;
+  text-align: center;
+}
+.container .container__header .container__header__data {
+  max-width: 80%;
+  min-height: 900px;
+  margin: 5% auto auto auto;
+  border-radius: 25px;
+  display: flex;
+  background-color: white;
+  position: relative;
+  top: 0;
+  z-index: 5;
+}
+.container .container__header .container__header__data .container__header__data__element {
+  width: 35%;
+  min-height: 250px;
+  z-index: 5;
+}
+.container .container__header .container__header__data .container__header__data__element .container__header__data__element__header {
+  max-width: 250px;
+  min-height: 50px;
+  margin: auto;
+  padding-top: 25px;
+  font-size: 17px;
+  color: darkgray;
+  text-align: center;
+}
+.container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom {
+  max-width: 500px;
+  min-height: 100px;
+  margin: auto;
+  font-size: 14px;
+  text-align: center;
+  z-index: 5;
+}
+.container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom .green {
+  color: green;
+}
+.container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom .red {
+  color: red;
+}
+.container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom .container__header__data__element__bottom__list {
+  max-width: 450px;
+  min-height: 230px;
+}
+.container .container__header .container__header__data .container__header__data__element .container__header__data__element__bottom .container__header__data__element__bottom__list .container__header__data__element__bottom__list__labels {
+  max-width: 100px;
+  min-height: 100px;
+}
+.container .container__header .container__header__data_black {
+  max-width: 80%;
+  min-height: 900px;
+  margin: 5% auto auto auto;
+  border-radius: 25px;
+  display: flex;
+  background-color: black;
+  position: relative;
+  top: 0;
+  z-index: 5;
+}
+.container .container__header .container__header__data_black .container__header__data__element {
+  width: 35%;
+  min-height: 250px;
+  z-index: 5;
+}
+.container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__header {
+  max-width: 250px;
+  min-height: 50px;
+  margin: auto;
+  padding-top: 25px;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+}
+.container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__bottom {
+  max-width: 500px;
+  min-height: 100px;
+  margin: auto;
+  font-size: 14px;
+  text-align: center;
+  z-index: 5;
+  color: white;
+}
+.container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__bottom .green {
+  color: green;
+}
+.container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__bottom .red {
+  color: red;
+}
+.container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__bottom .container__header__data__element__bottom__list {
+  max-width: 450px;
+  min-height: 230px;
+}
+.container .container__header .container__header__data_black .container__header__data__element .container__header__data__element__bottom .container__header__data__element__bottom__list .container__header__data__element__bottom__list__labels {
+  max-width: 100px;
+  min-height: 100px;
+}
+.container .bottom {
+  width: 100%;
+  height: 40%;
+  z-index: 1;
+}
+
+.payment {
+  width: 350px;
+  height: 250px;
+  background-color: aqua;
+  margin: auto;
+}
+
+/*MOBILE < 420*/
 @media (max-width: 420px) {
   /*HEADER*/
   .container {
@@ -455,5 +457,3 @@
     margin: auto;
   }
 }
-/*HEADER*/
-/*BOTTOM*/
