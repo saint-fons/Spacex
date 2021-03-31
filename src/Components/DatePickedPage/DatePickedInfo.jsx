@@ -23,7 +23,7 @@ const DatePickedInfo = (props) => {
                                         {n.launch_success ?
                                             <span className={s.green}>success</span> :
                                             <span className={s.red}>not success</span>}/
-                                        {n.launch_date_local}
+                                        {n.launch_date_local.split("").splice(0, 16).join("")}
                                     </div>
                                 </div>
                             )}

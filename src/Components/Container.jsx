@@ -5,7 +5,9 @@ import {getData, prevPage, updateCurrentPage, updateDate, updateSearchedDate} fr
 import {
     getLaunchesSS,
     getTotalPostsLengthSelector,
-    getSortedLaunchesSS, getLaunchesDatesSS, getDatePickedSS,
+    getSortedLaunchesSS,
+    getLaunchesDatesSS,
+    getDatePickedSS,
 } from "../Redux/Launches-selector";
 import {withRouter} from "react-router";
 import ContainerStyle from "./ContainerStyle";
