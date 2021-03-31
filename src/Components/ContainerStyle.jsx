@@ -46,6 +46,7 @@ const ContainerStyle = (props) => {
 
                     <Route exact path='/search/' render={() =>
                         <Search
+                            theme={theme}
                             updateDate={props.updateDate}
                             updateSearchedDate={props.updateSearchedDate}
                             SortedLaunches={props.SortedLaunches}
@@ -55,6 +56,7 @@ const ContainerStyle = (props) => {
 
                     <Route exact path="/DatePicked/" render={() =>
                         <DatePicked
+                            theme={theme}
                             DatePicked={props.DatePicked}
                         />}
                     />

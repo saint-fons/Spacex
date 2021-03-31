@@ -29,6 +29,13 @@ $FullDisplay: 100%;
       background-repeat: no-repeat;
       background-size: cover;
 
+      .container__header_nav__img__center {
+        max-width: 150px;
+        min-height: 150px;
+
+        margin: auto auto auto 50%;
+      }
+
       .container__header_nav {
 
         display: flex;
@@ -49,14 +56,6 @@ $FullDisplay: 100%;
         min-width: $FullDisplay - 70%;
         max-height: 50px;
 
-        .NevaTripLogo {
-          width: 350px;
-          height: 150px;
-          position: relative;
-
-          top: 0;
-          left: $FullDisplay - 57%;
-        }
       }
 
 

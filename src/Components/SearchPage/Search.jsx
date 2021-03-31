@@ -14,6 +14,7 @@ const Search = (props) => {
                 />
                 <div>
                     <SearchInfo
+                        theme={props.theme}
                         SortedLaunches={props.SortedLaunches}
                     />
                 </div>

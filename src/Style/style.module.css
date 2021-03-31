@@ -21,6 +21,11 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .container .container__header .container__header_nav__img__center {
+    max-width: 150px;
+    min-height: 150px;
+    margin: auto auto auto 50%;
+  }
   .container .container__header .container__header_nav {
     display: flex;
     justify-content: space-between;
@@ -34,13 +39,6 @@
   .container .container__header .container__address {
     min-width: 30%;
     max-height: 50px;
-  }
-  .container .container__header .container__address .NevaTripLogo {
-    width: 350px;
-    height: 150px;
-    position: relative;
-    top: 0;
-    left: 43%;
   }
   .container .container__header .paginationBar__light {
     max-width: 70%;

@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8570b616-554e-4f1b-86ab-eda1e479fb52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Style/IMG/moon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Style/IMG/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Style/IMG/elon.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/ContainerStyle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContainerStyle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DatePickedPage/DatePicked.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickedPage/DatePicked.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/DatePickedPage/DatePickedInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DatePickedPage/DatePickedInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/MainInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/MainInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/Pagination.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/SearchPage/Forms/SearchForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchPage/Forms/SearchForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/SearchPage/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchPage/Search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Launches-selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Launches-selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Rocket-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/Form-Styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/Form-Styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/dark.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/IMG/dark.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/light.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/IMG/light.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/IMG/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style/pattern-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/IMG/pattern-bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SearchPage/SearchInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchPage/SearchInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style.module-dist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module-dist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Style/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Style/style.module.scss" afterDir="false" />
@@ -107,7 +97,7 @@
       <workItem from="1616931481335" duration="8473000" />
       <workItem from="1616952561089" duration="12132000" />
       <workItem from="1617096489830" duration="11364000" />
-      <workItem from="1617167591941" duration="6591000" />
+      <workItem from="1617167591941" duration="8993000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -263,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617119274417</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="styles ver 1">
+      <created>1617174591365</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1617174591365</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,6 +302,7 @@
     <MESSAGE value="nav menu" />
     <MESSAGE value="Main data picker added" />
     <MESSAGE value="separate Search DatePicked and Main pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="separate Search DatePicked and Main pages" />
+    <MESSAGE value="styles ver 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="styles ver 1" />
   </component>
 </project>

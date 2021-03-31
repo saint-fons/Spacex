@@ -3,7 +3,11 @@ import s from "../../Style/style.module.css"
 const DatePickedInfo = (props) => {
     return (
         <div>
-            <div className={s.container__header__data}>
+            <div className={
+                props.theme === 'light' ?
+                    s.container__header__data :
+                    s.container__header__data_black
+            }>
                 <div className={s.container__header__data__element}>
                     <div className={s.container__header__data__element__header}>
                         Name/Success/Launch date

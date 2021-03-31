@@ -97,19 +97,19 @@ const SearchForm = (props) => {
                             <div className="buttons">
                                 <button
                                     type="button"
-                                    disabled={submitting || pristine}
                                 >
                                     <NavLink to={'/DatePicked/'}
                                     >
                                         Date picked
                                     </NavLink>
-                                </button><button
+                                </button>
+                                <button
                                     type="button"
                                 >
-                                <NavLink to={'/'}
-                                >
-                                    Main page
-                                </NavLink>
+                                    <NavLink to={'/'}
+                                    >
+                                        Main page
+                                    </NavLink>
                                 </button>
 
                                 {/*<button

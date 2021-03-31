@@ -1,9 +1,14 @@
 import s from "../../Style/style.module.css"
+import elon from "../../Style/IMG/elon.jpg"
 
 const SearchInfo = (props) => {
     return (
         <div>
-            <div className={s.container__header__data}>
+            <div className={
+                props.theme === 'light' ?
+                    s.container__header__data :
+                    s.container__header__data_black
+            }>
                 <div className={s.container__header__data__element}>
                     <div className={s.container__header__data__element__header}>
                         Name/Success/Launch date
@@ -59,8 +64,8 @@ const SearchInfo = (props) => {
                                     className={s.container__header__data__element__bottom__list}
                                     key={Math.random()}>
                                     <img src={
-                                        p.links.mission_patch
-                                    }
+                                        p.links.mission_patch}
+                                         alt={elon}
                                          className={s.container__header__data__element__bottom__list__labels}
                                     />
                                 </div>
