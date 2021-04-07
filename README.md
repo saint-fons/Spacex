@@ -1,10 +1,8 @@
 # SpaceX Rest API
 
 ### Живая версия - [LiveVersion](https://spacex-saint-fons.vercel.app/)
-### ТЗ - [notion.so](https://www.notion.so/front-end-258e55dfd25e40f09d1f342f8e9a7aa5)
 
 ## Для запуска:
-
 
 ###  `yarn install`
 ###  `yarn start`
@@ -37,5 +35,4 @@
 #### После выбора даты и нажатия кнопки Date picked выполняется переход на страницу с информацией о конкретном пуске ракеты
 ![img.jpg](src/Style/IMG/readme/date_picked.jpg)
 
-
-Работы выполнена для [ligaa.agency](https://ligaa.agency/). Без ментора или сторонней помощи. Работоспособность проверена win10/ubuntu20 chrome/firefox(89.0.4389.114/84.0)
+Работоспособность проверена win10/ubuntu20 chrome/firefox(89.0.4389.114/84.0)
