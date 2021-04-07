@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8570b616-554e-4f1b-86ab-eda1e479fb52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/MainInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/MainInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,24 +53,52 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
-    <property name="ts.external.directory.path" value="F:\Applications\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="F:\git\SpaceX\spacexliga\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\git\SpaceX\spacexliga\src\Components\DatePickedPage" />
+      <recent name="F:\git\SpaceX\spacexliga\src" />
+      <recent name="F:\git\SpaceX\spacexliga\src\Components\SearchPage1\TSForm" />
       <recent name="F:\git\SpaceX\spacexliga\src\Components" />
+      <recent name="F:\git\SpaceX\spacexliga\src\Components\DatePickedPage" />
       <recent name="F:\git\SpaceX\spacexliga\src\Style" />
-      <recent name="F:\git\SpaceX\spacexliga\public" />
-      <recent name="F:\git\SpaceX\spacexliga\src\Redux" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\git\SpaceX\spacexliga" />
       <recent name="F:\git\SpaceX\spacexliga\src\Style\IMG" />
       <recent name="F:\git\SpaceX\spacexliga\src\Style" />
       <recent name="F:\git\SpaceX\spacexliga\src\Components\SearchPage" />
       <recent name="F:\git\SpaceX\spacexliga\src\Components\MainPage" />
-      <recent name="F:\git\SpaceX\spacexliga\src\Components" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,7 +122,17 @@
       <workItem from="1616952561089" duration="12132000" />
       <workItem from="1617096489830" duration="11364000" />
       <workItem from="1617167591941" duration="15247000" />
-      <workItem from="1617183858828" duration="220000" />
+      <workItem from="1617183858828" duration="1195000" />
+      <workItem from="1617307359133" duration="1204000" />
+      <workItem from="1617318176590" duration="154000" />
+      <workItem from="1617318573745" duration="12000" />
+      <workItem from="1617319785169" duration="1762000" />
+      <workItem from="1617321587043" duration="65000" />
+      <workItem from="1617321764851" duration="2003000" />
+      <workItem from="1617532793395" duration="38000" />
+      <workItem from="1617544959464" duration="3135000" />
+      <workItem from="1617626159253" duration="3871000" />
+      <workItem from="1617806347663" duration="95000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1616512826738</created>
@@ -280,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617183977472</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="comments">
+      <created>1617184191505</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1617184191505</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +350,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="displayed" />
     <MESSAGE value="date selector created" />
     <MESSAGE value="launches filtered super selector" />
     <MESSAGE value="simple date picker" />
@@ -325,6 +374,7 @@
     <MESSAGE value="dates format fixed" />
     <MESSAGE value="readme.md added" />
     <MESSAGE value="readme fix 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme fix 1" />
+    <MESSAGE value="comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments" />
   </component>
 </project>

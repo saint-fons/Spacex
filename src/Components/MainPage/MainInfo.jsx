@@ -1,5 +1,7 @@
 import Pagination from "./Pagination";
 import s from "../../Style/style.module.css"
+import SimpleTsComponent from "../index";
+import React from "react";
 
 const MainInfo = (props) => {
     return (
@@ -26,6 +28,7 @@ const MainInfo = (props) => {
                 <div className={s.container__header__data__element}>
                     <div className={s.container__header__data__element__header}>
                         Name/Success/Launch date
+                        <SimpleTsComponent />
                     </div>
                     <div className={s.container__header__data__element__bottom}>
                         <div>
